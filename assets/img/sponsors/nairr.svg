@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="96" viewBox="0 0 260 96" role="img" aria-label="NAIRR Pilot logo">
+  <rect width="260" height="96" rx="16" fill="#ffffff"/>
+  <rect x="18" y="18" width="72" height="60" rx="12" fill="#0f766e"/>
+  <text x="54" y="54" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#ffffff">NAIRR</text>
+  <text x="102" y="43" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">NAIRR</text>
+  <text x="102" y="62" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Pilot</text>
+</svg>

@@ -157,6 +157,7 @@ plugins:
   - jekyll-jupyter-notebook
   - jekyll-link-attributes
   - jekyll-minifier
+  - jekyll-paginate-v2
   - jekyll-regex-replace
   - jekyll/scholar
   - jekyll-sitemap
@@ -180,6 +181,9 @@ sass:
 # -----------------------------------------------------------------------------
 # Jekyll Minifier
 # -----------------------------------------------------------------------------
+
+pagination:
+  enabled: true
 
 jekyll-minifier:
   compress_javascript: false # set to false since we are using terser as the js minifier

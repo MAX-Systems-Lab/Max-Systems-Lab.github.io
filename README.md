@@ -24,7 +24,7 @@ docker compose up
 
 Site URL:
 
-- http://localhost:8080/Max-Systems-Lab/
+- http://localhost:8080/
 
 Stop server:
 
@@ -55,11 +55,22 @@ Related content:
 Edit:
 
 - `_pages/research.md`
+- `_data/lab_projects.yml`
+- `_data/sponsors.yml`
 
 What to update:
 
-- Each research subject card
-- Subject image, title, and explanation
+- Research subject cards on the main research page
+- Sub-project details (`subprojects` under each track) for each research detail page
+- Sponsors section at bottom (name/logo/link)
+
+Research detail pages:
+
+- `_pages/research-ml-microarchitecture-simulation.md`
+- `_pages/research-gpu-design-space-exploration.md`
+- `_pages/research-llm-hpc-performance-systems.md`
+- `_pages/research-automated-hardware-software-codesign.md`
+- `_includes/research_detail.liquid` (shared detail-page renderer)
 
 ### 3) Publications
 
@@ -150,4 +161,3 @@ Removed unused default/demo content from this customized lab site:
 
 - Hidden default pages in `_pages/` (`blog`, `books`, `cv`, `dropdown`, `projects`, `teaching`, `about_einstein`)
 - Sample content in `_posts/`, `_projects/`, `_teachings/`, `_books/`
-
