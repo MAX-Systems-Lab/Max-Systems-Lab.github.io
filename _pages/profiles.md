@@ -18,7 +18,7 @@ nav_order: 5
   <section class="people-professor">
     <p class="people-kicker">Lab Lead</p>
     <article class="people-professor-card">
-      <img src="{{ '/assets/img/prof_pic_color.png' | relative_url }}" alt="Professor portrait" />
+      <img src="{{'/assets/img/professor.jpeg'| relative_url}}" alt="Professor portrait" />
       <div>
         <h2>Dr. Santosh Pandey</h2>
         <p class="people-role">Professor and Principal Investigator</p>
@@ -40,13 +40,13 @@ nav_order: 5
     </div>
     <div class="people-grid">
       <article class="people-card">
-        <img src="{{ '/assets/img/5.jpg' | relative_url }}" alt="PhD student portrait" />
+        <img src="{{ '/assets/img/krishbin.jpeg' | relative_url }}" alt="PhD student portrait" />
         <h4>Krishbin Paudel</h4>
         <p class="people-focus">Research Focus: Explainable micro-architecture design</p>
         <!-- <p>Robustness and evaluation</p> -->
       </article>
       <article class="people-card">
-        <img src="{{ '/assets/img/6.jpg' | relative_url }}" alt="PhD student portrait" />
+        <img src="{{ '/assets/img/nadika.jpeg' | relative_url }}" alt="PhD student portrait" />
         <h4>Nadika Poudel</h4>
         <p class="people-focus">Research Focus: Machine Learning for TPU/GPU compiler optimization</p>
         <!-- <p>Efficient serving systems</p> -->
@@ -66,7 +66,7 @@ nav_order: 5
     </div>
     <div class="people-grid">
       <article class="people-card">
-        <img src="{{ '/assets/img/8.jpg' | relative_url }}" alt="Graduate student portrait" />
+        <img src="{{ '/assets/img/himangi.jpeg' | relative_url }}" alt="Graduate student portrait" />
         <h4>Hemangi Patil</h4>
         <p class="people-focus">Research Focus: System and Algorithm optimization of Retrieval Model</p>
         <!-- <p>LLM adaptation and alignment</p> -->
@@ -92,14 +92,14 @@ nav_order: 5
     </div>
     <div class="people-grid">
       <article class="people-card">
-        <img src="{{ '/assets/img/11.jpg' | relative_url }}" alt="Undergraduate student portrait" />
+        <img src="{{ '/assets/img/nafi.jpeg' | relative_url }}" alt="Undergraduate student portrait" />
         <h4>Chowdhury Nafiun Nuru</h4>
         <p class="people-focus">Focus: Compiler Optimization</p>
         <!-- <p>Data and infrastructure tooling</p> -->
       </article>
       <article class="people-card">
-        <img src="{{ '/assets/img/12.jpg' | relative_url }}" alt="Undergraduate student portrait" />
-        <h4>Chowdhury Nafiun Nuru</h4>
+        <img src="{{ '/assets/img/zyad.jpeg' | relative_url }}" alt="Undergraduate student portrait" />
+        <h4>Zyad Abd-Elrahma</h4>
         <p class="people-focus">Focus: Hardware Security</p>
         <!-- <p>Experiment automation</p> -->
       </article>
