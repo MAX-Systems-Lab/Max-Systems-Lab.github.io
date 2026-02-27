@@ -20,11 +20,10 @@ nav_order: 5
     <article class="people-professor-card">
       <img src="{{ '/assets/img/prof_pic_color.png' | relative_url }}" alt="Professor portrait" />
       <div>
-        <h2>Prof. Name Here</h2>
+        <h2>Prof. Santosh Pandey</h2>
         <p class="people-role">Professor and Principal Investigator</p>
         <p>
-          Leads research on ML-based architecture simulation, GPU systems, and automated co-design.
-        </p>
+ Leads research on ML-based architecture simulation, GPU/TPU optimization, hardware security and hardware-software co-design.        </p>
         <div class="people-badge-row">
           <span class="people-badge">Architecture</span>
           <span class="people-badge">ML Systems</span>
@@ -41,7 +40,7 @@ nav_order: 5
     <div class="people-grid">
       <article class="people-card">
         <img src="{{ '/assets/img/5.jpg' | relative_url }}" alt="PhD student portrait" />
-        <h4>PhD Student 1</h4>
+        <h4>Krishbin Paudel</h4>
         <p class="people-focus">Focus: Surrogate simulation models</p>
         <p>Robustness and evaluation</p>
       </article>
