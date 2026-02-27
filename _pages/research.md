@@ -27,7 +27,6 @@ nav_order: 2
   {% endfor %}
 </section>
 
-
 <section class="sponsors-section" aria-label="Sponsors">
   <div class="research-section-head">
     <h2>Sponsors</h2>

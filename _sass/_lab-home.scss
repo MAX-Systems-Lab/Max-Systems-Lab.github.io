@@ -10,8 +10,7 @@ body {
   font-family: "Manrope", "Segoe UI", sans-serif;
   background:
     radial-gradient(circle at 10% -10%, rgba(15, 118, 110, 0.08), transparent 40%),
-    radial-gradient(circle at 90% 0%, rgba(30, 64, 175, 0.06), transparent 35%),
-    var(--global-bg-color);
+    radial-gradient(circle at 90% 0%, rgba(30, 64, 175, 0.06), transparent 35%), var(--global-bg-color);
 }
 
 h1,
@@ -58,7 +57,9 @@ h6,
   object-fit: cover;
   border-radius: 16px;
   box-shadow: 0 14px 35px rgba(15, 23, 42, 0.14);
-  transition: transform 220ms ease, box-shadow 220ms ease;
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease;
 }
 
 .lab-top-gallery img:hover {
@@ -70,9 +71,7 @@ h6,
   margin: 1.2rem 0 1.6rem;
   padding: clamp(1.2rem, 2vw, 1.8rem);
   border-radius: 18px;
-  background:
-    linear-gradient(145deg, rgba(15, 118, 110, 0.12), rgba(30, 64, 175, 0.12)),
-    #f8fafc;
+  background: linear-gradient(145deg, rgba(15, 118, 110, 0.12), rgba(30, 64, 175, 0.12)), #f8fafc;
   border: 1px solid rgba(15, 118, 110, 0.16);
 }
 
@@ -113,7 +112,10 @@ h6,
   text-decoration: none;
   font-weight: 700;
   font-size: 0.92rem;
-  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    background 160ms ease;
 }
 
 .lab-btn:hover {
@@ -328,7 +330,9 @@ h6,
   border-radius: 14px;
   border: 1px solid rgba(15, 23, 42, 0.1);
   background: #ffffff;
-  transition: transform 180ms ease, box-shadow 180ms ease;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
 }
 
 .people-card:hover {
@@ -415,7 +419,9 @@ h6,
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
-  transition: transform 180ms ease, box-shadow 180ms ease;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
 }
 
 .research-card-link:hover .research-card {
@@ -725,9 +731,7 @@ h6,
 .join-hero {
   padding: 1rem;
   border-radius: 16px;
-  background:
-    linear-gradient(145deg, rgba(15, 118, 110, 0.12), rgba(30, 64, 175, 0.1)),
-    #f8fafc;
+  background: linear-gradient(145deg, rgba(15, 118, 110, 0.12), rgba(30, 64, 175, 0.1)), #f8fafc;
   border: 1px solid rgba(15, 118, 110, 0.16);
   margin-bottom: 1rem;
 }
@@ -933,9 +937,7 @@ html[data-theme="dark"] {
   .lab-hero-panel,
   .people-professor-card,
   .join-hero {
-    background:
-      linear-gradient(145deg, rgba(15, 118, 110, 0.16), rgba(30, 64, 175, 0.18)),
-      #111827;
+    background: linear-gradient(145deg, rgba(15, 118, 110, 0.16), rgba(30, 64, 175, 0.18)), #111827;
     border-color: rgba(94, 234, 212, 0.22);
   }
 
