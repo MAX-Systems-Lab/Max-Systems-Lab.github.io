@@ -1,14 +1,38 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - concept-inversion
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - concept-inversion/concept-inversion.github.io
+  - concept-inversion/praxsys
+  - concept-inversion/ragflow
+  - concept-inversion/nyx
+  - concept-inversion/raggo
+  - concept-inversion/go-openbb
+
+featured:
+  - name: concept-inversion.github.io
+    url: https://github.com/concept-inversion/concept-inversion.github.io
+    summary: Source for the lab website and content publishing workflow.
+    focus: Website / Infrastructure
+  - name: praxsys
+    url: https://github.com/concept-inversion/praxsys
+    summary: Systems-oriented project exploring practical pipelines for research workflows.
+    focus: Research Systems
+  - name: ragflow
+    url: https://github.com/concept-inversion/ragflow
+    summary: Retrieval-augmented workflow and experimentation toolkit.
+    focus: RAG Tooling
+  - name: nyx
+    url: https://github.com/concept-inversion/nyx
+    summary: Codebase for systems and modeling experiments under active iteration.
+    focus: Model Systems
+  - name: raggo
+    url: https://github.com/concept-inversion/raggo
+    summary: Lightweight utilities and components for retrieval-augmented applications.
+    focus: Libraries
+  - name: go-openbb
+    url: https://github.com/concept-inversion/go-openbb
+    summary: Go ecosystem integration and tooling for analytics-oriented workflows.
+    focus: Go / Analytics

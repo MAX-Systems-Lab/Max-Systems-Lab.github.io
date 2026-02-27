@@ -1,34 +1,63 @@
 ---
 layout: about
-title: about
+title: home
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
-
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
-
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+subtitle: Building ML-driven systems for architecture simulation, HPC, and co-design.
 
 announcements:
   enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+  scrollable: false # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
+  enabled: false
+  scrollable: false # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
+
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: false # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+<section class="lab-top-gallery" aria-label="Lab gallery">
+  <img src="{{ '/assets/img/1.jpg' | relative_url }}" alt="Research setup and lab workspace" />
+  <img src="{{ '/assets/img/2.jpg' | relative_url }}" alt="Team collaboration session" />
+  <img src="{{ '/assets/img/3.jpg' | relative_url }}" alt="AI systems and modeling environment" />
+  <img src="{{ '/assets/img/4.jpg' | relative_url }}" alt="Prototyping and experiments" />
+</section>
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+<section class="lab-hero-panel">
+  <p class="lab-eyebrow">Santosh Pandey Lab</p>
+  <h2>ML-driven systems research for computer architecture and HPC.</h2>
+  <p>
+    Our lab develops machine-learning methods that make architecture and systems research faster, more scalable,
+    and more predictive. We focus on replacing expensive simulation workflows with accurate learned surrogates
+    and intelligent data-generation strategies.
+  </p>
+  <p>
+    We work across the stack: microarchitecture simulation, GPU design-space exploration, LLM/HPC performance analysis,
+    and automated hardware-software optimization.
+  </p>
+  <p class="lab-recruiting-note">
+    Actively recruiting fully funded PhD students interested in ML systems, architecture simulation, and HPC.
+  </p>
+  <div class="lab-cta-row">
+    <a class="lab-btn lab-btn-primary" href="{{ '/research/' | relative_url }}">Explore Research</a>
+    <a class="lab-btn lab-btn-secondary" href="{{ '/publications/' | relative_url }}">View Publications</a>
+    <a class="lab-btn lab-btn-secondary" href="{{ '/join/' | relative_url }}">Join the Lab</a>
+  </div>
+</section>
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+<section class="lab-pillar-grid">
+  <article class="lab-pillar-card">
+    <h3>ML for Architecture Simulation</h3>
+    <p>Accurate and reusable learning-based simulation approaches for modern CPU/GPU systems.</p>
+  </article>
+  <article class="lab-pillar-card">
+    <h3>Systems for ML/HPC</h3>
+    <p>Optimized runtime and hardware-software strategies for scaling ML and HPC applications.</p>
+  </article>
+  <article class="lab-pillar-card">
+    <h3>Automated Stack Optimization</h3>
+    <p>Generative and predictive modeling for program, compiler, and architecture co-optimization.</p>
+  </article>
+</section>
