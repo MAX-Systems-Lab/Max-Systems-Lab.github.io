@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://krishbin.github.io/Max-Systems-Lab/sitemap.xml
+Sitemap: https://max-systems-lab.github.io//sitemap.xml

@@ -7,42 +7,42 @@ ninja.data = [{
     title: "home",
     section: "Navigation",
     handler: () => {
-      window.location.href = "/Max-Systems-Lab/";
+      window.location.href = "/";
     },
   },{id: "nav-research",
           title: "research",
           description: "Research directions and active themes at Max Systems Lab.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/Max-Systems-Lab/research/";
+            window.location.href = "/research/";
           },
         },{id: "nav-publications",
           title: "publications",
           description: "Papers, preprints, and technical reports from the lab.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/Max-Systems-Lab/publications/";
+            window.location.href = "/publications/";
           },
         },{id: "nav-repositories",
           title: "repositories",
           description: "Open-source code, tools, and research artifacts from the lab.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/Max-Systems-Lab/repositories/";
+            window.location.href = "/repositories/";
           },
         },{id: "nav-people",
           title: "people",
           description: "Members of Max Systems Lab.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/Max-Systems-Lab/people/";
+            window.location.href = "/people/";
           },
         },{id: "nav-join",
           title: "join",
           description: "Openings and collaboration opportunities at Max Systems Lab.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/Max-Systems-Lab/join/";
+            window.location.href = "/join/";
           },
         },{id: "news-paper-accepted-at-micro-2024-introducing-tea-titan-for-efficient-gpu-design-space-exploration",
           title: 'Paper accepted at MICRO 2024 introducing Tea+ + Titan for efficient GPU design-space...',
