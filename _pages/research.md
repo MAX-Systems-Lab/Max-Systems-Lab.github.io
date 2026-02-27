@@ -9,8 +9,7 @@ nav_order: 2
 
 <section class="research-overview">
   <p>
-    Our research combines machine learning, computer architecture, and systems design to make performance modeling
-    and optimization dramatically faster and more reliable.
+    Our current agenda is organized into four active research thrusts exactly aligned with ongoing work in architecture modeling, compiler/program optimization, retrieval systems, and architecture security.
   </p>
 </section>
 
