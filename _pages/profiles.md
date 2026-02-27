@@ -18,12 +18,12 @@ nav_order: 5
   <section class="people-professor">
     <p class="people-kicker">Lab Lead</p>
     <article class="people-professor-card">
-      <img src="{{ '/assets/img/prof_pic_color.png' | relative_url }}" alt="Professor portrait" />
+      <img src="{{'/assets/img/professor.jpeg'| relative_url}}" alt="Professor portrait" />
       <div>
-        <h2>Prof. Name Here</h2>
+        <h2>Dr. Santosh Pandey</h2>
         <p class="people-role">Professor and Principal Investigator</p>
         <p>
-          Leads research on ML-based architecture simulation, GPU systems, and automated co-design.
+          Leads research on ML-based architecture simulation, GPU/TPU optimization, hardware security and hardware-software co-design.
         </p>
         <div class="people-badge-row">
           <span class="people-badge">Architecture</span>
@@ -40,38 +40,38 @@ nav_order: 5
     </div>
     <div class="people-grid">
       <article class="people-card">
-        <img src="{{ '/assets/img/5.jpg' | relative_url }}" alt="PhD student portrait" />
-        <h4>PhD Student 1</h4>
-        <p class="people-focus">Focus: Surrogate simulation models</p>
-        <p>Robustness and evaluation</p>
+        <img src="{{ '/assets/img/krishbin.jpeg' | relative_url }}" alt="PhD student portrait" />
+        <h4>Krishbin Paudel</h4>
+        <p class="people-focus">Research Focus: Explainable micro-architecture design</p>
+        <!-- <p>Robustness and evaluation</p> -->
       </article>
       <article class="people-card">
-        <img src="{{ '/assets/img/6.jpg' | relative_url }}" alt="PhD student portrait" />
-        <h4>PhD Student 2</h4>
-        <p class="people-focus">Focus: GPU architecture exploration</p>
-        <p>Efficient serving systems</p>
+        <img src="{{ '/assets/img/nadika.jpeg' | relative_url }}" alt="PhD student portrait" />
+        <h4>Nadika Poudel</h4>
+        <p class="people-focus">Research Focus: Machine Learning for TPU/GPU compiler optimization</p>
+        <!-- <p>Efficient serving systems</p> -->
       </article>
-      <article class="people-card">
+      <!-- <article class="people-card">
         <img src="{{ '/assets/img/7.jpg' | relative_url }}" alt="PhD student portrait" />
         <h4>PhD Student 3</h4>
         <p class="people-focus">Focus: Kernel-level performance analysis</p>
         <p>Multimodal reasoning</p>
-      </article>
+      </article> -->
     </div>
   </section>
 
   <section class="people-group">
     <div class="people-heading">
-      <h3>Grad</h3>
+      <h3>Masters Students</h3>
     </div>
     <div class="people-grid">
       <article class="people-card">
-        <img src="{{ '/assets/img/8.jpg' | relative_url }}" alt="Graduate student portrait" />
-        <h4>Graduate Student 1</h4>
-        <p class="people-focus">Focus: Data generation pipelines</p>
-        <p>LLM adaptation and alignment</p>
+        <img src="{{ '/assets/img/himangi.jpeg' | relative_url }}" alt="Graduate student portrait" />
+        <h4>Hemangi Patil</h4>
+        <p class="people-focus">Research Focus: System and Algorithm optimization of Retrieval Model</p>
+        <!-- <p>LLM adaptation and alignment</p> -->
       </article>
-      <article class="people-card">
+      <!-- <article class="people-card">
         <img src="{{ '/assets/img/9.jpg' | relative_url }}" alt="Graduate student portrait" />
         <h4>Graduate Student 2</h4>
         <p class="people-focus">Focus: Benchmark design</p>
@@ -82,7 +82,7 @@ nav_order: 5
         <h4>Graduate Student 3</h4>
         <p class="people-focus">Focus: Runtime optimization</p>
         <p>Applied systems research</p>
-      </article>
+      </article> -->
     </div>
   </section>
 
@@ -92,23 +92,23 @@ nav_order: 5
     </div>
     <div class="people-grid">
       <article class="people-card">
-        <img src="{{ '/assets/img/11.jpg' | relative_url }}" alt="Undergraduate student portrait" />
-        <h4>UnderGrad Student 1</h4>
-        <p class="people-focus">Focus: Tooling and automation</p>
-        <p>Data and infrastructure tooling</p>
+        <img src="{{ '/assets/img/nafi.jpeg' | relative_url }}" alt="Undergraduate student portrait" />
+        <h4>Chowdhury Nafiun Nuru</h4>
+        <p class="people-focus">Focus: Compiler Optimization</p>
+        <!-- <p>Data and infrastructure tooling</p> -->
       </article>
       <article class="people-card">
-        <img src="{{ '/assets/img/12.jpg' | relative_url }}" alt="Undergraduate student portrait" />
-        <h4>UnderGrad Student 2</h4>
-        <p class="people-focus">Focus: Experiment orchestration</p>
-        <p>Experiment automation</p>
+        <img src="{{ '/assets/img/zyad.jpeg' | relative_url }}" alt="Undergraduate student portrait" />
+        <h4>Zyad Abd-Elrahma</h4>
+        <p class="people-focus">Focus: Hardware Security</p>
+        <!-- <p>Experiment automation</p> -->
       </article>
-      <article class="people-card">
+      <!-- <article class="people-card">
         <img src="{{ '/assets/img/3.jpg' | relative_url }}" alt="Undergraduate student portrait" />
         <h4>UnderGrad Student 3</h4>
         <p class="people-focus">Focus: Evaluation support</p>
         <p>Model evaluation support</p>
-      </article>
+      </article> -->
     </div>
   </section>
 </div>
