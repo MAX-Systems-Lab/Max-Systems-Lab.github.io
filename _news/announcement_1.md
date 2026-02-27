@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Recipient of the University of Alabama's Blackmon-Moody Outstanding Faculty Research Award for this year.
+Pricipal Investigator Santosh Pandey awarded Rutgers ECE Graduate Leadership and Service Award.
