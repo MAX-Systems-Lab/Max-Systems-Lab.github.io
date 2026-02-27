@@ -242,6 +242,7 @@ h6,
 }
 
 .people-page {
+  --people-photo-size: 220px;
   display: grid;
   gap: 1.4rem;
 }
@@ -262,7 +263,7 @@ h6,
 
 .people-professor-card {
   display: grid;
-  grid-template-columns: 180px 1fr;
+  grid-template-columns: var(--people-photo-size) 1fr;
   gap: 1rem;
   align-items: center;
   padding: 1rem;
@@ -272,9 +273,9 @@ h6,
 }
 
 .people-professor-card img {
-  width: 180px;
+  width: var(--people-photo-size);
   aspect-ratio: 1 / 1;
-  height: auto;
+  height: var(--people-photo-size);
   object-fit: cover;
   border-radius: 0;
   box-shadow: 0 12px 26px rgba(15, 23, 42, 0.2);
@@ -336,12 +337,12 @@ h6,
 }
 
 .people-card img {
-  width: 100%;
+  width: var(--people-photo-size);
   aspect-ratio: 1 / 1;
-  height: auto;
+  height: var(--people-photo-size);
   object-fit: cover;
   border-radius: 0;
-  margin-bottom: 0.65rem;
+  margin: 0 auto 0.65rem;
 }
 
 .people-card h4 {
@@ -368,7 +369,7 @@ h6,
   }
 
   .people-professor-card img {
-    width: min(100%, 260px);
+    width: min(100%, var(--people-photo-size));
     aspect-ratio: 1 / 1;
     height: auto;
   }
