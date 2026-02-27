@@ -44,14 +44,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/join/";
           },
-        },{id: "news-paper-accepted-at-micro-2024-introducing-tea-titan-for-efficient-gpu-design-space-exploration",
-          title: 'Paper accepted at MICRO 2024 introducing Tea+ + Titan for efficient GPU design-space...',
-          description: "",
-          section: "News",},{id: "news-paper-accepted-at-micro-2024-introducing-tao-for-throughput-and-accuracy-oriented-gpu-simulation",
-          title: 'Paper accepted at MICRO 2024 introducing TAO for throughput- and accuracy-oriented GPU simulation....',
-          description: "",
-          section: "News",},{id: "news-paper-accepted-in-isca-2025",
-          title: 'Paper accepted in ISCA 2025.',
+        },{id: "news-one-paper-concorde-fast-and-accurate-cpu-performance-modeling-with-compositional-analytical-ml-fusion-led-by-arash-accepted-at-isca-25-a-great-collaborative-work-during-my-time-at-google",
+          title: 'One paper Concorde: Fast and Accurate CPU Performance Modeling with Compositional Analytical-ML Fusion,...',
           description: "",
           section: "News",},{id: "news-pricipal-investigator-santosh-pandey-awarded-rutgers-ece-graduate-leadership-and-service-award",
           title: 'Pricipal Investigator Santosh Pandey awarded Rutgers ECE Graduate Leadership and Service Award.',
