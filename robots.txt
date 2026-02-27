@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://max-systems-lab.github.io//sitemap.xml
+Sitemap: https://max-systems-lab.github.io/sitemap.xml
