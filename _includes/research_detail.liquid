@@ -1,0 +1,53 @@
+{% assign track = site.data.lab_projects.tracks | where: 'id', page.research_id | first %}
+
+{% if track %}
+  <section class="research-detail-hero">
+    <a class="research-back-link" href="{{ '/research/' | relative_url }}">← Back to Research</a>
+    <div class="research-detail-hero-grid">
+      <img src="{{ track.image | relative_url }}" alt="{{ track.title }}" />
+      <div>
+        <p class="research-detail-kicker">Research Theme</p>
+        <h2>{{ track.title }}</h2>
+        <p>{{ track.summary }}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="research-detail-section">
+    <h3>What We Are Trying To Do</h3>
+    <ul class="research-goals-list">
+      {% for goal in track.objective %}
+        <li>{{ goal }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="research-detail-section">
+    <h3>Sub-Projects</h3>
+    <div class="subproject-grid">
+      {% for project in track.subprojects %}
+        <article class="subproject-card">
+          <div class="subproject-head">
+            <h4>{{ project.title }}</h4>
+            <span class="project-status project-status-{{ project.status | downcase | replace: ' ', '-' }}">{{ project.status }}</span>
+          </div>
+          <p class="subproject-meta">Lead: {{ project.lead }} · Timeline: {{ project.timeline }}</p>
+          <p>{{ project.details }}</p>
+          {% if project.links %}
+            <div class="subproject-links">
+              {% for link in project.links %}
+                {% if link.url contains '://' %}
+                  <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.label }}</a>
+                {% else %}
+                  <a href="{{ link.url | relative_url }}">{{ link.label }}</a>
+                {% endif %}
+              {% endfor %}
+            </div>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+{% else %}
+  <p>Research theme details are currently unavailable.</p>
+{% endif %}

@@ -39,12 +39,34 @@
     li {
       margin-bottom: 1rem;
 
+      .publication-left-column {
+        display: flex;
+        flex-direction: column;
+        gap: 0.55rem;
+      }
+
       .preview {
-        display: inline-block;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+      }
+
+      .preview-wrap {
+        width: 100%;
       }
 
       .abbr {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0;
+
+        .venue-name {
+          font-size: 0.8rem;
+          font-weight: 700;
+          line-height: 1.25;
+          color: var(--global-text-color);
+          margin-bottom: 0.35rem;
+        }
 
         abbr {
           display: inline-block;
@@ -173,6 +195,15 @@
         border-color: var(--global-text-color);
       }
     }
+
+    @media (max-width: 767px) {
+      li {
+        .publication-left-column {
+          margin-bottom: 0.75rem;
+        }
+      }
+    }
+
     div.award.hidden {
       border: dashed 1px var(--global-bg-color);
     }

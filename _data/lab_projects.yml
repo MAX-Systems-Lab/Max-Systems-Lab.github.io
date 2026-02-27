@@ -1,0 +1,110 @@
+tracks:
+  - id: micro-sim
+    slug: ml-microarchitecture-simulation
+    title: ML-Based Microarchitecture Simulation
+    image: /assets/img/1.jpg
+    summary: Learn high-fidelity performance models that approximate simulator behavior for faster architecture exploration.
+    objective:
+      - Build cycle-accurate surrogate models for fast what-if analysis.
+      - Improve extrapolation to unseen workloads and hardware variants.
+      - Release reproducible benchmark suites and evaluation pipelines.
+    subprojects:
+      - title: Cycle Predictor v2
+        status: Active
+        lead: PhD Student 1
+        timeline: Spring 2026
+        details: Transformer-based surrogate for IPC and bottleneck estimation on unseen traces.
+        links:
+          - label: Repository
+            url: /repositories/
+          - label: Publication
+            url: /publications/
+      - title: Trace Distillation Pipeline
+        status: In Progress
+        lead: Grad Researcher 1
+        timeline: Summer 2026
+        details: Data-generation and compression workflow for simulator traces at scale.
+        links:
+          - label: Repository
+            url: /repositories/
+
+  - id: gpu-dse
+    slug: gpu-design-space-exploration
+    title: GPU Design-Space Exploration
+    image: /assets/img/2.jpg
+    summary: Combine simulation signals and ML surrogates to accelerate architecture parameter search.
+    objective:
+      - Build low-cost models for throughput, latency, and accuracy tradeoff prediction.
+      - Prioritize candidates using uncertainty-aware ranking.
+      - Integrate loop with compiler/runtime feedback.
+    subprojects:
+      - title: TAO Next
+        status: Active
+        lead: PhD Student 2
+        timeline: 2026
+        details: Throughput- and accuracy-oriented optimization for modern GPU workloads.
+        links:
+          - label: Publication
+            url: /publications/
+      - title: Titan Search Engine
+        status: Planned
+        lead: Grad Researcher 2
+        timeline: Fall 2026
+        details: Multi-objective search framework for architecture parameter sweeps.
+        links:
+          - label: Repository
+            url: /repositories/
+
+  - id: llm-hpc
+    slug: llm-hpc-performance-systems
+    title: LLM and HPC Performance Systems
+    image: /assets/img/3.jpg
+    summary: Diagnose bottlenecks in large-model and HPC workflows from kernels to full pipelines.
+    objective:
+      - Build profiling pipelines that unify hardware counters and software traces.
+      - Predict cost/performance for model and runtime choices.
+      - Deliver actionable tuning recommendations for system operators.
+    subprojects:
+      - title: Kernel Bottleneck Atlas
+        status: Active
+        lead: PhD Student 3
+        timeline: 2026
+        details: Catalog and classifier of recurrent GPU/CPU kernel inefficiencies.
+        links:
+          - label: Repository
+            url: /repositories/
+      - title: End-to-End Runtime Advisor
+        status: In Progress
+        lead: Grad Researcher 3
+        timeline: Late 2026
+        details: Recommender for batch sizing, operator fusion, and memory/runtime knobs.
+        links:
+          - label: Publication
+            url: /publications/
+
+  - id: hw-sw-codesign
+    slug: automated-hardware-software-codesign
+    title: Automated Hardware-Software Co-Design
+    image: /assets/img/4.jpg
+    summary: Automate optimization across workloads, compilers, runtimes, and architecture configurations.
+    objective:
+      - Connect workload characteristics to architecture and compiler decisions.
+      - Support closed-loop optimization with measurable gains.
+      - Enable reproducible co-design experiments and artifacts.
+    subprojects:
+      - title: CoDesign Agent
+        status: Active
+        lead: Lab Lead + Team
+        timeline: 2026
+        details: Policy-guided agent for proposing cross-stack optimization actions.
+        links:
+          - label: Repository
+            url: /repositories/
+      - title: AutoTune Bench
+        status: In Progress
+        lead: UnderGrad Team
+        timeline: Ongoing
+        details: Benchmark harness for comparing automated optimization strategies.
+        links:
+          - label: Publication
+            url: /publications/
