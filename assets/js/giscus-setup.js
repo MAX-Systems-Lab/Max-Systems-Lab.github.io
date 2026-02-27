@@ -18,7 +18,7 @@ function determineGiscusTheme() {
 
   let giscusAttributes = {
     src: "https://giscus.app/client.js",
-    "data-repo": "MAX-Systems-Lab/Max-Systems-Lab",
+    "data-repo": "MAX-Systems-Lab/Max-Systems-Lab.github.io",
     "data-repo-id": "",
     "data-category": "",
     "data-category-id": "",
