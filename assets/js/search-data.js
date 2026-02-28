@@ -4,41 +4,41 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-home",
-    title: "home",
+    title: "Home",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
   },{id: "nav-research",
-          title: "research",
+          title: "Research",
           description: "Research directions and active themes at Max Systems Lab.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/research/";
           },
         },{id: "nav-publications",
-          title: "publications",
+          title: "Publications",
           description: "Papers, preprints, and technical reports from the lab.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
           },
         },{id: "nav-repositories",
-          title: "repositories",
+          title: "Repositories",
           description: "Open-source code, tools, and research artifacts from the lab.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/repositories/";
           },
         },{id: "nav-people",
-          title: "people",
+          title: "People",
           description: "Members of Max Systems Lab.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/people/";
           },
         },{id: "nav-join",
-          title: "join",
+          title: "Join",
           description: "Openings and collaboration opportunities at Max Systems Lab.",
           section: "Navigation",
           handler: () => {
