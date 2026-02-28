@@ -25,8 +25,20 @@ body.fixed-top-nav {
 }
 
 body.sticky-bottom-footer {
-  // Remove padding below footer.
+  // Remove padding below footer and keep footer pinned at viewport bottom on short pages.
   padding-bottom: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body.sticky-bottom-footer > .container[role="main"],
+body.sticky-bottom-footer > .post.distill {
+  flex: 1 0 auto;
+}
+
+body.sticky-bottom-footer > footer.sticky-bottom {
+  margin-top: auto !important;
 }
 
 .container {

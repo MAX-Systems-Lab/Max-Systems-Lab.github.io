@@ -1,6 +1,6 @@
 ---
 layout: about
-title: home
+title: Home
 permalink: /
 subtitle: Building ML-driven systems for architecture simulation, HPC, and co-design.
 

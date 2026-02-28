@@ -4,6 +4,7 @@ tracks:
     title: "Architecture Design and Performance Modeling"
     image: /assets/img/1.jpg
     summary: "ML-agents for Architecture Evaluation and Design"
+    overview: "We build ML agents that evaluate and guide architecture design with strong out-of-distribution generalization, clearer explanations, and higher reliability. The work combines architecture-aware mixture-of-experts models with data-driven analytical performance modeling, while improving interpretability around dependencies, bottlenecks, and critical paths. A core direction is moving from instruction-level signals to fine-grained event prediction and cycle estimation, supported by better instrumentation, scalable training pipelines, simulator integration, and LLM-based performance-agent workflows."
     objective:
       - "Improve generalizable (OOD problem)."
       - "Architecture-aware mixture of experts."
@@ -36,6 +37,7 @@ tracks:
     title: "Program/Compiler Optimization"
     image: /assets/img/2.jpg
     summary: "Understanding Programs from Architectural Perspective"
+    overview: "Program and compiler analysis from an architectural perspective improves optimization across heterogeneous systems. The work develops robust program representations, handles proprietary and perturbed input/architecture settings, and builds methods for representative program generation that reflect real workloads. It also investigates semantic and syntactic similarity with contrastive learning while pursuing automation for program/compiler optimization and better HPC-cloud efficiency through dynamic resource-utilization profile based scheduling."
     objective:
       - "Program representation."
       - "How to learn representation?"
@@ -66,6 +68,7 @@ tracks:
     title: "System Design for Information Retrieval"
     image: /assets/img/3.jpg
     summary: "HW/SW co-design for Large Scale Retrieval Systems"
+    overview: "Hardware-software co-design for large-scale information retrieval and RAG systems is a central direction in the lab. The group explores scalable representations across graph, table, and retrieval-augmented model pipelines, including domain links such as bioinformatics. The effort spans system architecture, indexing, serving optimization, and end-to-end performance modeling so retrieval stacks can scale with better latency-throughput characteristics and stronger deployment reliability."
     objective:
       - "Large-scale data representation."
       - "Graph, tables, RAG models, and connection to bioinformatics."
@@ -87,6 +90,7 @@ tracks:
     title: "Architecture and Security"
     image: /assets/img/4.jpg
     summary: "Secure Hardware Systems"
+    overview: "Secure hardware-system design and architecture-security co-optimization define this direction. The team builds methods to evaluate proprietary designs with proprietary benchmarks under TEE/TrustZone settings and designs RTL instrumentation to gather security-performance evidence. Key directions include program-architecture interaction analysis for vulnerability, security-aware design-space exploration, and verification-aware microarchitecture exploration, with practical attention to how performance counters can both help and mislead security analysis."
     objective:
       - "Evaluating proprietary design with proprietary benchmarks with TEE."
       - "Trustzone execution."

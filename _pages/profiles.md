@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /people/
-title: people
+title: People
 description: Members of Max Systems Lab.
 nav: true
 nav_order: 5

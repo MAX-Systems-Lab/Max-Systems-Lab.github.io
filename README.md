@@ -91,6 +91,23 @@ Publication links supported in BibTeX entries:
 - `pdf`
 - `video`
 
+Publication image support in BibTeX entries:
+
+- `image` (recommended): supports a full URL or a site path like `/assets/img/publications/my-paper.png`
+- `preview` (legacy): filename under `assets/img/publication_preview/` (example: `preview={my-paper.png}`)
+
+Example:
+
+```bibtex
+@inproceedings{example2026,
+  title  = {Example Paper},
+  author = {Doe, Jane and Smith, John},
+  year   = {2026},
+  image  = {/assets/img/publications/example-paper.png},
+  doi    = {10.0000/example}
+}
+```
+
 ### 4) Repositories
 
 Edit:

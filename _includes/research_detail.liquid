@@ -4,9 +4,7 @@
   <section class="research-detail-hero">
     <a class="research-back-link" href="{{ '/research/' | relative_url }}">← Back to Research</a>
     <div class="research-detail-hero-grid">
-      <img src="{{ track.image | relative_url }}" alt="{{ track.title }}">
       <div>
-        <p class="research-detail-kicker">Research Theme</p>
         <h2>{{ track.title }}</h2>
         <p>{{ track.summary }}</p>
       </div>
@@ -14,47 +12,37 @@
   </section>
 
   <section class="research-detail-section">
-    <h3>What We Are Trying To Do</h3>
-    <ul class="research-goals-list">
-      {% for goal in track.objective %}
-        <li>{{ goal }}</li>
-      {% endfor %}
-    </ul>
+    <h3>Research Overview</h3>
+    {% if track.overview %}
+      <p class="research-overview-paragraph">{{ track.overview }}</p>
+    {% else %}
+      <p class="research-overview-paragraph">{{ track.objective | join: ' ' }}</p>
+    {% endif %}
   </section>
 
   <section class="research-detail-section">
-    <h3>Sub-Projects</h3>
-    <div class="subproject-grid">
-      {% for project in track.subprojects %}
-        <article class="subproject-card">
-          <div class="subproject-head">
-            <h4>{{ project.title }}</h4>
-            {% if project.status %}
-              <span class="project-status project-status-{{ project.status | downcase | replace: ' ', '-' }}">{{ project.status }}</span>
-            {% endif %}
-          </div>
-          {% if project.lead or project.timeline %}
-            <p class="subproject-meta">
-              {% if project.lead %}Lead: {{ project.lead }}{% endif %}
-              {% if project.lead and project.timeline %} · {% endif %}
-              {% if project.timeline %}Timeline: {{ project.timeline }}{% endif %}
-            </p>
+    <h3>Research Details</h3>
+    {% if track.detail_paragraph %}
+      <p class="research-overview-paragraph">{{ track.detail_paragraph }}</p>
+    {% elsif track.subprojects and track.subprojects.size > 0 %}
+      <p class="research-overview-paragraph">
+        Current efforts in this area include
+        {% for project in track.subprojects %}
+          {% capture project_text %}{{ project.title }}{% if project.details %}: {{ project.details | strip }}{% endif %}{% endcapture %}
+          {% if forloop.first %}
+            {{ project_text }}
+          {% elsif forloop.last %}
+            {% if forloop.index == 2 %} and {% else %}, and {% endif -%}
+            {{- project_text }}
+          {% else %}
+            , {{ project_text }}
           {% endif %}
-          <p>{{ project.details }}</p>
-          {% if project.links %}
-            <div class="subproject-links">
-              {% for link in project.links %}
-                {% if link.url contains '://' %}
-                  <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.label }}</a>
-                {% else %}
-                  <a href="{{ link.url | relative_url }}">{{ link.label }}</a>
-                {% endif %}
-              {% endfor %}
-            </div>
-          {% endif %}
-        </article>
-      {% endfor %}
-    </div>
+        {% endfor -%}
+        .
+      </p>
+    {% else %}
+      <p class="research-overview-paragraph">Detailed narrative content for this research area will be added soon.</p>
+    {% endif %}
   </section>
 {% else %}
   <p>Research theme details are currently unavailable.</p>
