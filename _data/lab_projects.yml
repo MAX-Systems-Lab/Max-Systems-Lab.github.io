@@ -1,110 +1,114 @@
 tracks:
   - id: thrust-1
     slug: thrust-1-architecture-design-performance-modeling
-    title: Architecture Design and Performance Modeling
+    title: "Architecture Design and Performance Modeling"
     image: /assets/img/1.jpg
-    summary: ML-agents for Architecture Evaluation and Design
+    summary: "ML-agents for Architecture Evaluation and Design"
+    overview: "We build ML agents that evaluate and guide architecture design with strong out-of-distribution generalization, clearer explanations, and higher reliability. The work combines architecture-aware mixture-of-experts models with data-driven analytical performance modeling, while improving interpretability around dependencies, bottlenecks, and critical paths. A core direction is moving from instruction-level signals to fine-grained event prediction and cycle estimation, supported by better instrumentation, scalable training pipelines, simulator integration, and LLM-based performance-agent workflows."
     objective:
-      - Improve generalizable (OOD problem).
-      - Architecture-aware mixture of experts.
-      - Data-driven analytical performance modeling.
-      - How can we make them more explainable/reliable?
-      - Identify what to explain: dependency, microarchitecture bottlenecks, or critical paths.
-      - Provide insights beyond traditional simulators (complex dependencies).
-      - Two goals: insights + accurate and generalizable prediction model.
-      - Previous: instruction -> predict events/cycles.
-      - Proposed: instruction -> predict fine-grained events -> determine cycles based on events.
-      - How to gather training data? Instrumentation.
-      - How to train?
-      - Integrating them with existing tools.
-      - Integration with existing simulators (co-existing simulator, ML for complex reasoning).
-      - Integration with LLMs as performance agents.
-      - Architecture-performance agent reinforced LLM-based architecture generation.
-      - Can LLMs learn to predict microarchitecture performance with limited fine-tuning?
+      - "Improve generalizable (OOD problem)."
+      - "Architecture-aware mixture of experts."
+      - "Data-driven analytical performance modeling."
+      - "How can we make them more explainable/reliable?"
+      - "Identify what to explain: dependency, microarchitecture bottlenecks, or critical paths."
+      - "Provide insights beyond traditional simulators (complex dependencies)."
+      - "Two goals: insights + accurate and generalizable prediction model."
+      - "Previous: instruction -> predict events/cycles."
+      - "Proposed: instruction -> predict fine-grained events -> determine cycles based on events."
+      - "How to gather training data? Instrumentation."
+      - "How to train?"
+      - "Integrating them with existing tools."
+      - "Integration with existing simulators (co-existing simulator, ML for complex reasoning)."
+      - "Integration with LLMs as performance agents."
+      - "Architecture-performance agent reinforced LLM-based architecture generation."
+      - "Can LLMs learn to predict microarchitecture performance with limited fine-tuning?"
     subprojects:
-      - title: Architecture-Aware Mixture of Experts
-        details: Generalizable architecture modeling for OOD settings.
-      - title: Explainable and Reliable Architecture Insight Engine
-        details: Focus on dependency/bottleneck/critical-path interpretation and trustworthy predictions.
-      - title: Fine-Grained Event-to-Cycle Prediction
-        details: Move from coarse event/cycle prediction to fine-grained event pipelines for cycle determination.
-      - title: Simulator and LLM Integration
-        details: Integrate with simulators and develop LLM performance agents for architecture workflows.
+      - title: "Architecture-Aware Mixture of Experts"
+        details: "Generalizable architecture modeling for OOD settings."
+      - title: "Explainable and Reliable Architecture Insight Engine"
+        details: "Focus on dependency/bottleneck/critical-path interpretation and trustworthy predictions."
+      - title: "Fine-Grained Event-to-Cycle Prediction"
+        details: "Move from coarse event/cycle prediction to fine-grained event pipelines for cycle determination."
+      - title: "Simulator and LLM Integration"
+        details: "Integrate with simulators and develop LLM performance agents for architecture workflows."
 
   - id: thrust-2
     slug: thrust-2-program-compiler-optimization
-    title: Program/Compiler Optimization
+    title: "Program/Compiler Optimization"
     image: /assets/img/2.jpg
-    summary: Understanding Programs from Architectural Perspective
+    summary: "Understanding Programs from Architectural Perspective"
+    overview: "Program and compiler analysis from an architectural perspective improves optimization across heterogeneous systems. The work develops robust program representations, handles proprietary and perturbed input/architecture settings, and builds methods for representative program generation that reflect real workloads. It also investigates semantic and syntactic similarity with contrastive learning while pursuing automation for program/compiler optimization and better HPC-cloud efficiency through dynamic resource-utilization profile based scheduling."
     objective:
-      - Program representation.
-      - How to learn representation?
-      - How to handle proprietary data, input/architecture perturbation?
-      - Problem: representative program generation for real workloads.
-      - Program similarity.
-      - How should we define similarity? Semantic and syntax.
-      - Contrastive-example based learning.
-      - Program optimization.
-      - Problem: automatic program/compiler optimization for heterogeneous systems.
-      - Problem: improving efficiency of HPC and cloud servers.
-      - Dynamic resource utilization profile based scheduling.
+      - "Program representation."
+      - "How to learn representation?"
+      - "How to handle proprietary data, input/architecture perturbation?"
+      - "Problem: representative program generation for real workloads."
+      - "Program similarity."
+      - "How should we define similarity? Semantic and syntax."
+      - "Contrastive-example based learning."
+      - "Program optimization."
+      - "Problem: automatic program/compiler optimization for heterogeneous systems."
+      - "Problem: improving efficiency of HPC and cloud servers."
+      - "Dynamic resource utilization profile based scheduling."
     subprojects:
-      - title: Representation Learning for Architectural Program Understanding
-        details: Learn architecture-aware program representations for optimization and analysis.
-      - title: Program Similarity via Contrastive Learning
-        details: Similarity definitions driven by semantic/syntactic structure.
-      - title: Automatic Program/Compiler Optimization for Heterogeneous Systems
-        details: Using AI and automation to migrate between instruction sets.
+      - title: "Representation Learning for Architectural Program Understanding"
+        details: "Learn architecture-aware program representations for optimization and analysis."
+      - title: "Program Similarity via Contrastive Learning"
+        details: "Similarity definitions driven by semantic/syntactic structure."
+      - title: "Automatic Program/Compiler Optimization for Heterogeneous Systems"
+        details: "Using AI and automation to migrate between instruction sets."
         links:
-          - label: Google Cloud Blog
+          - label: "Google Cloud Blog"
             url: https://cloud.google.com/blog
-      - title: HPC and Cloud Efficiency via Dynamic Profile-Based Scheduling
-        details: Improve resource utilization and scheduling outcomes in production systems.
+      - title: "HPC and Cloud Efficiency via Dynamic Profile-Based Scheduling"
+        details: "Improve resource utilization and scheduling outcomes in production systems."
 
   - id: thrust-3
     slug: thrust-3-system-design-information-retrieval
-    title: System Design for Information Retrieval
+    title: "System Design for Information Retrieval"
     image: /assets/img/3.jpg
-    summary: HW/SW co-design for Large Scale Retrieval Systems
+    summary: "HW/SW co-design for Large Scale Retrieval Systems"
+    overview: "Hardware-software co-design for large-scale information retrieval and RAG systems is a central direction in the lab. The group explores scalable representations across graph, table, and retrieval-augmented model pipelines, including domain links such as bioinformatics. The effort spans system architecture, indexing, serving optimization, and end-to-end performance modeling so retrieval stacks can scale with better latency-throughput characteristics and stronger deployment reliability."
     objective:
-      - Large-scale data representation.
-      - Graph, tables, RAG models, and connection to bioinformatics.
-      - Modeling system performance.
+      - "Large-scale data representation."
+      - "Graph, tables, RAG models, and connection to bioinformatics."
+      - "Modeling system performance."
     subprojects:
-      - title: GraFetch: Accelerating Graph Applications Through Domain Specific Hierarchical Hybrid Prefetching
-        details: Retrieval- and graph-system acceleration through prefetching and co-design.
-      - title: Information Retrieval: Recent Advances and Beyond
-        details: Systems-centric direction for modern large-scale retrieval.
-      - title: Accelerating Retrieval-Augmented Generation
-        details: End-to-end acceleration of retrieval and generation pipelines.
-      - title: RAGO: Systematic Performance Optimization for Retrieval-Augmented Generation Serving
-        details: Structured optimization for production RAG serving.
-      - title: Accelerating Graph Indexing for ANNS on Modern CPUs
-        details: CPU-centric indexing and serving optimizations.
+      - title: "GraFetch: Accelerating Graph Applications Through Domain Specific Hierarchical Hybrid Prefetching"
+        details: "Retrieval- and graph-system acceleration through prefetching and co-design."
+      - title: "Information Retrieval: Recent Advances and Beyond"
+        details: "Systems-centric direction for modern large-scale retrieval."
+      - title: "Accelerating Retrieval-Augmented Generation"
+        details: "End-to-end acceleration of retrieval and generation pipelines."
+      - title: "RAGO: Systematic Performance Optimization for Retrieval-Augmented Generation Serving"
+        details: "Structured optimization for production RAG serving."
+      - title: "Accelerating Graph Indexing for ANNS on Modern CPUs"
+        details: "CPU-centric indexing and serving optimizations."
 
   - id: thrust-4
     slug: thrust-4-architecture-security
-    title: Architecture and Security
+    title: "Architecture and Security"
     image: /assets/img/4.jpg
-    summary: Secure Hardware Systems
+    summary: "Secure Hardware Systems"
+    overview: "Secure hardware-system design and architecture-security co-optimization define this direction. The team builds methods to evaluate proprietary designs with proprietary benchmarks under TEE/TrustZone settings and designs RTL instrumentation to gather security-performance evidence. Key directions include program-architecture interaction analysis for vulnerability, security-aware design-space exploration, and verification-aware microarchitecture exploration, with practical attention to how performance counters can both help and mislead security analysis."
     objective:
-      - Evaluating proprietary design with proprietary benchmarks with TEE.
-      - Trustzone execution.
-      - Problem: tool support to generate benchmarks for proprietary applications to evaluate trustzone execution.
-      - Designing RTL with instrumentation to collect data.
-      - Directions: analyzing trusted execution environment performance (TEE/cryptography/hardware design grounding).
-      - Program/architecture interaction analysis for vulnerability related to HW/SW co-design.
-      - Security-aware DSA.
-      - Quantifying security for HW/SW co-design.
-      - Verification-aware microarchitecture design space exploration.
+      - "Evaluating proprietary design with proprietary benchmarks with TEE."
+      - "Trustzone execution."
+      - "Problem: tool support to generate benchmarks for proprietary applications to evaluate trustzone execution."
+      - "Designing RTL with instrumentation to collect data."
+      - "Directions: analyzing trusted execution environment performance (TEE/cryptography/hardware design grounding)."
+      - "Program/architecture interaction analysis for vulnerability related to HW/SW co-design."
+      - "Security-aware DSA."
+      - "Quantifying security for HW/SW co-design."
+      - "Verification-aware microarchitecture design space exploration."
     subprojects:
-      - title: Using Hardware Vulnerability Factors to Enhance AVF Analysis
-        details: Security/reliability analysis using hardware vulnerability factors.
-      - title: Eliminating Microarchitectural Dependency from Architectural Vulnerability
-        details: More robust architectural vulnerability modeling across designs.
-      - title: Detecting Malicious Attacks Exploiting Hardware Vulnerabilities Using Performance Counters
-        details: Performance-counter-driven attack detection and diagnosis.
-      - title: SoK: The Challenges, Pitfalls, and Perils of Using Hardware Performance Counters for Security
-        details: Systematization of limitations and risks in counter-based security methods.
-      - title: A Case for Security-Aware Design-Space Exploration of Embedded Systems
-        details: Security-aware DSE strategies for embedded hardware systems.
+      - title: "Using Hardware Vulnerability Factors to Enhance AVF Analysis"
+        details: "Security/reliability analysis using hardware vulnerability factors."
+      - title: "Eliminating Microarchitectural Dependency from Architectural Vulnerability"
+        details: "More robust architectural vulnerability modeling across designs."
+      - title: "Detecting Malicious Attacks Exploiting Hardware Vulnerabilities Using Performance Counters"
+        details: "Performance-counter-driven attack detection and diagnosis."
+      - title: "SoK: The Challenges, Pitfalls, and Perils of Using Hardware Performance Counters for Security"
+        details: "Systematization of limitations and risks in counter-based security methods."
+      - title: "A Case for Security-Aware Design-Space Exploration of Embedded Systems"
+        details: "Security-aware DSE strategies for embedded hardware systems."

@@ -32,11 +32,21 @@
       </div>
 
       <div class="preview-wrap">
-        {% if entry.preview %}
-          {% if entry.preview contains '://' %}
-            <img class="preview z-depth-1 rounded" src="{{ entry.preview }}" alt="{{ entry.title }}">
+        {% assign publication_image = entry.image | default: entry.preview %}
+        {% if publication_image %}
+          {% if publication_image contains '://' %}
+            <img class="preview z-depth-1 rounded" src="{{ publication_image }}" alt="{{ entry.title }}">
           {% else %}
-            {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
+            {% assign image_first_char = publication_image | slice: 0, 1 %}
+            {% if publication_image contains '/' %}
+              {% if image_first_char == '/' %}
+                {% assign entry_path = publication_image %}
+              {% else %}
+                {% assign entry_path = '/' | append: publication_image %}
+              {% endif %}
+            {% else %}
+              {% assign entry_path = publication_image | prepend: '/assets/img/publication_preview/' %}
+            {% endif %}
             {%
               include figure.liquid
               loading="eager"

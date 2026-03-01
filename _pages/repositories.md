@@ -29,6 +29,7 @@ nav_order: 4
 </section>
 
 {% if site.data.repositories.github_users %}
+
   <section class="repo-profile-link">
     <h3>GitHub Profile</h3>
     <p>
