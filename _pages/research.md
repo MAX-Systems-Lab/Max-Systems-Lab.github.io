@@ -1,6 +1,6 @@
 ---
 layout: page
-title: research
+title: Research
 permalink: /research/
 description: Research directions and active themes at Max Systems Lab.
 nav: true

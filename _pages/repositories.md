@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /repositories/
-title: repositories
+title: Repositories
 description: Open-source code, tools, and research artifacts from the lab.
 nav: true
 nav_order: 4

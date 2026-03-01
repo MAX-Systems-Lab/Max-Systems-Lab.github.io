@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
+title: Publications
 description: Papers, preprints, and technical reports from the lab.
 nav: true
 nav_order: 3
