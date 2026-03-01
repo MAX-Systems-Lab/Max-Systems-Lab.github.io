@@ -29,9 +29,17 @@
         <article class="subproject-card">
           <div class="subproject-head">
             <h4>{{ project.title }}</h4>
-            <span class="project-status project-status-{{ project.status | downcase | replace: ' ', '-' }}">{{ project.status }}</span>
+            {% if project.status %}
+              <span class="project-status project-status-{{ project.status | downcase | replace: ' ', '-' }}">{{ project.status }}</span>
+            {% endif %}
           </div>
-          <p class="subproject-meta">Lead: {{ project.lead }} · Timeline: {{ project.timeline }}</p>
+          {% if project.lead or project.timeline %}
+            <p class="subproject-meta">
+              {% if project.lead %}Lead: {{ project.lead }}{% endif %}
+              {% if project.lead and project.timeline %} · {% endif %}
+              {% if project.timeline %}Timeline: {{ project.timeline }}{% endif %}
+            </p>
+          {% endif %}
           <p>{{ project.details }}</p>
           {% if project.links %}
             <div class="subproject-links">

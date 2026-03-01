@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Automated Hardware-Software Co-Design
-permalink: /research/automated-hardware-software-codesign/
-description: Sub-projects and details for automated hardware-software co-design.
+title: Architecture and Security
+permalink: /research/thrust-4-architecture-security/
+description: Details and sub-projects for Architecture and Security.
 nav: false
-research_id: hw-sw-codesign
+research_id: thrust-4
 ---
 
 {% include research_detail.liquid %}
