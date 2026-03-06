@@ -1,23 +1,67 @@
 metadata:
-  last_updated: "2026-02-27"
+  last_updated: '2026-03-06'
 papers:
-  "4jtGttIAAAAJ:5nxA0vEk-isC":
-    citations: 0
-  "4jtGttIAAAAJ:0EnyYjriUFMC":
-    citations: 0
-  "4jtGttIAAAAJ:Se3iqnhoufwC":
-    citations: 0
-  "4jtGttIAAAAJ:roLk4NBRz8UC":
-    citations: 0
-  "4jtGttIAAAAJ:_FxGoFyzp5QC":
-    citations: 0
-  "4jtGttIAAAAJ:Tyk-4Ss8FVUC":
-    citations: 0
-  "4jtGttIAAAAJ:2osOgNQ5qMEC":
-    citations: 0
-  "4jtGttIAAAAJ:UeHWp8X0CEIC":
-    citations: 0
-  "4jtGttIAAAAJ:9yKSN-GCB0IC":
-    citations: 0
-  "4jtGttIAAAAJ:u5HHmVD_uO8C":
-    citations: 0
+  4jtGttIAAAAJ:0EnyYjriUFMC:
+    citations: 3
+    title: 'TEA+: A Novel Temporal Graph Random Walk Engine with Hybrid Storage Architecture'
+    year: '2024'
+  4jtGttIAAAAJ:2osOgNQ5qMEC:
+    citations: 62
+    title: 'H-index: Hash-indexing for parallel triangle counting on GPUs'
+    year: '2019'
+  4jtGttIAAAAJ:5nxA0vEk-isC:
+    citations: 8
+    title: 'Tao: re-thinking DL-based microarchitecture simulation'
+    year: '2024'
+  4jtGttIAAAAJ:8k81kl-MbHgC:
+    citations: 3
+    title: 'Concorde: Fast and accurate cpu performance modeling with compositional analytical-ml fusion'
+    year: '2025'
+  4jtGttIAAAAJ:9yKSN-GCB0IC:
+    citations: 31
+    title: 'Deanonymizing cryptocurrency with graph learning: The promises and challenges'
+    year: '2019'
+  4jtGttIAAAAJ:IjCSPb-OGe4C:
+    citations: 272
+    title: 'Ftrans: energy-efficient acceleration of transformers using fpga'
+    year: '2020'
+  4jtGttIAAAAJ:Se3iqnhoufwC:
+    citations: 15
+    title: 'Tea: A general-purpose temporal graph random walk engine'
+    year: '2023'
+  4jtGttIAAAAJ:Tyk-4Ss8FVUC:
+    citations: 51
+    title: 'Trust: Triangle Counting Reloaded on GPUs'
+    year: '2021'
+  4jtGttIAAAAJ:UeHWp8X0CEIC:
+    citations: 39
+    title: 'Blocksim: A practical simulation tool for optimal network design, stability and planning'
+    year: '2019'
+  4jtGttIAAAAJ:_FxGoFyzp5QC:
+    citations: 23
+    title: 'Simnet: Accurate and high-performance computer architecture simulation using deep learning'
+    year: '2022'
+  4jtGttIAAAAJ:d1gkVwhDpl0C:
+    citations: 4
+    title: Distributed high performance computing using JAVA
+    year: '2016'
+  4jtGttIAAAAJ:eQOLeE2rZwMC:
+    citations: 48
+    title: 'Et: re-thinking self-attention for transformer models on gpus'
+    year: '2021'
+  4jtGttIAAAAJ:roLk4NBRz8UC:
+    citations: 7
+    title: Scalable deep learning-based microarchitecture simulation on gpus
+    year: '2022'
+  4jtGttIAAAAJ:u-x6o8ySG0sC:
+    citations: 9
+    title: Distributed high performance computing in openstack cloud over sdn infrastructure
+    year: '2017'
+  4jtGttIAAAAJ:u5HHmVD_uO8C:
+    citations: 108
+    title: Cloud based web scraping for big data applications
+    year: '2017'
+  4jtGttIAAAAJ:zYLM7Y9cAGgC:
+    citations: 85
+    title: 'C-SAW: a framework for graph sampling and random walk on GPUs'
+    year: '2020'
