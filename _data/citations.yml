@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-03-06'
+  last_updated: '2026-03-11'
 papers:
   4jtGttIAAAAJ:0EnyYjriUFMC:
     citations: 3
@@ -9,6 +9,10 @@ papers:
     citations: 62
     title: 'H-index: Hash-indexing for parallel triangle counting on GPUs'
     year: '2019'
+  4jtGttIAAAAJ:3fE2CSJIrl8C:
+    citations: 0
+    title: Synergizing High Performance Computing and Machine Learning for Co-Designing Computing Systems
+    year: '2025'
   4jtGttIAAAAJ:5nxA0vEk-isC:
     citations: 8
     title: 'Tao: re-thinking DL-based microarchitecture simulation'
@@ -49,6 +53,10 @@ papers:
     citations: 48
     title: 'Et: re-thinking self-attention for transformer models on gpus'
     year: '2021'
+  4jtGttIAAAAJ:kNdYIx-mwKoC:
+    citations: 0
+    title: Fast DL-based Simulation with Microarchitecture Agnostic Traces and Instruction Embeddings
+    year: Unknown Year
   4jtGttIAAAAJ:roLk4NBRz8UC:
     citations: 7
     title: Scalable deep learning-based microarchitecture simulation on gpus
@@ -62,6 +70,6 @@ papers:
     title: Cloud based web scraping for big data applications
     year: '2017'
   4jtGttIAAAAJ:zYLM7Y9cAGgC:
-    citations: 85
+    citations: 86
     title: 'C-SAW: a framework for graph sampling and random walk on GPUs'
     year: '2020'
