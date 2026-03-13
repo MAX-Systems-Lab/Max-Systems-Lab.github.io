@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-03-11'
+  last_updated: '2026-03-13'
 papers:
   4jtGttIAAAAJ:0EnyYjriUFMC:
     citations: 3
@@ -18,7 +18,7 @@ papers:
     title: 'Tao: re-thinking DL-based microarchitecture simulation'
     year: '2024'
   4jtGttIAAAAJ:8k81kl-MbHgC:
-    citations: 3
+    citations: 4
     title: 'Concorde: Fast and accurate cpu performance modeling with compositional analytical-ml fusion'
     year: '2025'
   4jtGttIAAAAJ:9yKSN-GCB0IC:
