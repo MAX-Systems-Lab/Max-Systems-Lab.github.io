@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-03-23'
+  last_updated: '2026-04-01'
 papers:
   4jtGttIAAAAJ:0EnyYjriUFMC:
     citations: 3
@@ -14,7 +14,7 @@ papers:
     title: Synergizing High Performance Computing and Machine Learning for Co-Designing Computing Systems
     year: '2025'
   4jtGttIAAAAJ:5nxA0vEk-isC:
-    citations: 8
+    citations: 9
     title: 'Tao: re-thinking DL-based microarchitecture simulation'
     year: '2024'
   4jtGttIAAAAJ:8k81kl-MbHgC:
@@ -26,7 +26,7 @@ papers:
     title: 'Deanonymizing cryptocurrency with graph learning: The promises and challenges'
     year: '2019'
   4jtGttIAAAAJ:IjCSPb-OGe4C:
-    citations: 276
+    citations: 277
     title: 'Ftrans: energy-efficient acceleration of transformers using fpga'
     year: '2020'
   4jtGttIAAAAJ:Se3iqnhoufwC:
@@ -42,7 +42,7 @@ papers:
     title: 'Blocksim: A practical simulation tool for optimal network design, stability and planning'
     year: '2019'
   4jtGttIAAAAJ:_FxGoFyzp5QC:
-    citations: 24
+    citations: 25
     title: 'Simnet: Accurate and high-performance computer architecture simulation using deep learning'
     year: '2022'
   4jtGttIAAAAJ:d1gkVwhDpl0C:
