@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-04-01'
+  last_updated: '2026-04-27'
 papers:
   4jtGttIAAAAJ:0EnyYjriUFMC:
     citations: 3
@@ -22,11 +22,11 @@ papers:
     title: 'Concorde: Fast and accurate cpu performance modeling with compositional analytical-ml fusion'
     year: '2025'
   4jtGttIAAAAJ:9yKSN-GCB0IC:
-    citations: 31
+    citations: 32
     title: 'Deanonymizing cryptocurrency with graph learning: The promises and challenges'
     year: '2019'
   4jtGttIAAAAJ:IjCSPb-OGe4C:
-    citations: 277
+    citations: 279
     title: 'Ftrans: energy-efficient acceleration of transformers using fpga'
     year: '2020'
   4jtGttIAAAAJ:Se3iqnhoufwC:
@@ -34,7 +34,7 @@ papers:
     title: 'Tea: A general-purpose temporal graph random walk engine'
     year: '2023'
   4jtGttIAAAAJ:Tyk-4Ss8FVUC:
-    citations: 51
+    citations: 52
     title: 'Trust: Triangle Counting Reloaded on GPUs'
     year: '2021'
   4jtGttIAAAAJ:UeHWp8X0CEIC:
@@ -66,10 +66,10 @@ papers:
     title: Distributed high performance computing in openstack cloud over sdn infrastructure
     year: '2017'
   4jtGttIAAAAJ:u5HHmVD_uO8C:
-    citations: 108
+    citations: 110
     title: Cloud based web scraping for big data applications
     year: '2017'
   4jtGttIAAAAJ:zYLM7Y9cAGgC:
-    citations: 86
+    citations: 87
     title: 'C-SAW: a framework for graph sampling and random walk on GPUs'
     year: '2020'
