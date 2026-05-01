@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-04-27'
+  last_updated: '2026-05-01'
 papers:
   4jtGttIAAAAJ:0EnyYjriUFMC:
     citations: 3
     title: 'TEA+: A Novel Temporal Graph Random Walk Engine with Hybrid Storage Architecture'
     year: '2024'
   4jtGttIAAAAJ:2osOgNQ5qMEC:
-    citations: 62
+    citations: 63
     title: 'H-index: Hash-indexing for parallel triangle counting on GPUs'
     year: '2019'
   4jtGttIAAAAJ:3fE2CSJIrl8C:
@@ -18,7 +18,7 @@ papers:
     title: 'Tao: re-thinking DL-based microarchitecture simulation'
     year: '2024'
   4jtGttIAAAAJ:8k81kl-MbHgC:
-    citations: 4
+    citations: 5
     title: 'Concorde: Fast and accurate cpu performance modeling with compositional analytical-ml fusion'
     year: '2025'
   4jtGttIAAAAJ:9yKSN-GCB0IC:
@@ -34,13 +34,17 @@ papers:
     title: 'Tea: A general-purpose temporal graph random walk engine'
     year: '2023'
   4jtGttIAAAAJ:Tyk-4Ss8FVUC:
-    citations: 52
+    citations: 53
     title: 'Trust: Triangle Counting Reloaded on GPUs'
     year: '2021'
   4jtGttIAAAAJ:UeHWp8X0CEIC:
     citations: 39
     title: 'Blocksim: A practical simulation tool for optimal network design, stability and planning'
     year: '2019'
+  4jtGttIAAAAJ:Zph67rFs4hoC:
+    citations: 2
+    title: A Comprehensive Survey of Subgraph Matching:[Experiments & Analysis]
+    year: '2025'
   4jtGttIAAAAJ:_FxGoFyzp5QC:
     citations: 25
     title: 'Simnet: Accurate and high-performance computer architecture simulation using deep learning'
