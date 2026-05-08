@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-05-01'
+  last_updated: '2026-05-08'
 papers:
   4jtGttIAAAAJ:0EnyYjriUFMC:
     citations: 3
@@ -14,11 +14,11 @@ papers:
     title: Synergizing High Performance Computing and Machine Learning for Co-Designing Computing Systems
     year: '2025'
   4jtGttIAAAAJ:5nxA0vEk-isC:
-    citations: 9
+    citations: 10
     title: 'Tao: re-thinking DL-based microarchitecture simulation'
     year: '2024'
   4jtGttIAAAAJ:8k81kl-MbHgC:
-    citations: 5
+    citations: 6
     title: 'Concorde: Fast and accurate cpu performance modeling with compositional analytical-ml fusion'
     year: '2025'
   4jtGttIAAAAJ:9yKSN-GCB0IC:
@@ -26,7 +26,7 @@ papers:
     title: 'Deanonymizing cryptocurrency with graph learning: The promises and challenges'
     year: '2019'
   4jtGttIAAAAJ:IjCSPb-OGe4C:
-    citations: 279
+    citations: 280
     title: 'Ftrans: energy-efficient acceleration of transformers using fpga'
     year: '2020'
   4jtGttIAAAAJ:Se3iqnhoufwC:
@@ -38,7 +38,7 @@ papers:
     title: 'Trust: Triangle Counting Reloaded on GPUs'
     year: '2021'
   4jtGttIAAAAJ:UeHWp8X0CEIC:
-    citations: 39
+    citations: 40
     title: 'Blocksim: A practical simulation tool for optimal network design, stability and planning'
     year: '2019'
   4jtGttIAAAAJ:Zph67rFs4hoC:
@@ -46,7 +46,7 @@ papers:
     title: A Comprehensive Survey of Subgraph Matching:[Experiments & Analysis]
     year: '2025'
   4jtGttIAAAAJ:_FxGoFyzp5QC:
-    citations: 25
+    citations: 26
     title: 'Simnet: Accurate and high-performance computer architecture simulation using deep learning'
     year: '2022'
   4jtGttIAAAAJ:d1gkVwhDpl0C:
@@ -62,7 +62,7 @@ papers:
     title: Fast DL-based Simulation with Microarchitecture Agnostic Traces and Instruction Embeddings
     year: Unknown Year
   4jtGttIAAAAJ:roLk4NBRz8UC:
-    citations: 7
+    citations: 8
     title: Scalable deep learning-based microarchitecture simulation on gpus
     year: '2022'
   4jtGttIAAAAJ:u-x6o8ySG0sC:
@@ -70,7 +70,7 @@ papers:
     title: Distributed high performance computing in openstack cloud over sdn infrastructure
     year: '2017'
   4jtGttIAAAAJ:u5HHmVD_uO8C:
-    citations: 110
+    citations: 111
     title: Cloud based web scraping for big data applications
     year: '2017'
   4jtGttIAAAAJ:zYLM7Y9cAGgC:
