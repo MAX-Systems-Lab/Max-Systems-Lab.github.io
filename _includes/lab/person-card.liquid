@@ -1,0 +1,23 @@
+{% assign p = include.person %}
+<article class="lab-person">
+  {% include lab/avatar.liquid person=p %}
+  <h4>
+    {% if p.links.website -%}
+      <a href="{{ p.links.website }}" target="_blank" rel="noopener">{{ p.name }}</a>
+    {%- else -%}
+      {{- p.name -}}
+    {%- endif %}
+  </h4>
+  {% if p.focus %}
+    <p class="lab-person-focus">{{ p.focus }}</p>
+  {% endif %}
+  {% if p.note %}
+    <p class="lab-person-note">{{ p.note }}</p>
+  {% endif %}
+  {% for a in site.data.awards %}
+    {% if a.who == p.name or a.who contains p.name %}
+      <p class="lab-person-award"><i class="fa-solid fa-trophy"></i> {{ a.title }} ({{ a.year }})</p>
+    {% endif %}
+  {% endfor %}
+  {% include lab/person-links.liquid links=p.links %}
+</article>

@@ -1,0 +1,73 @@
+# -----------------------------------------------------------------------------
+# Lab members. Add a person by copying a block below.
+#
+#   role:   pi | postdoc | phd | ms | ug | visitor | alumni
+#   photo:  file name inside assets/img/people/ (optional; initials are shown otherwise)
+#   since:  year they joined (optional)
+#   area:   research area id; the person is listed on that area's page
+#   links:  any of website, scholar, github, linkedin, twitter, email
+#
+# To move someone to alumni: change `role:` to `alumni`, add `degree:` and `now:`.
+# Awards are listed in _data/awards.yml and appear on the person's card automatically.
+# -----------------------------------------------------------------------------
+
+- name: Santosh Pandey
+  role: pi
+  title: Principal Investigator
+  photo: professor.jpeg
+  bio: >
+    Santosh leads MAX Systems Lab. His research uses machine learning to model and optimize computer
+    systems, spanning deep-learning-based microarchitecture simulation (SimNet, TAO), CPU performance
+    modeling (Concorde, with Google), and GPU-accelerated graph and ML systems.
+  links:
+    website: https://concept-inversion.github.io
+    scholar: https://scholar.google.com/citations?user=4jtGttIAAAAJ
+    github: https://github.com/concept-inversion
+
+- name: Krishbin Paudel
+  area: perf # research area id (perf, compiler, hetero, data, security)
+  role: phd
+  photo: krishbin.jpeg
+  focus: Explainable microarchitecture performance modeling
+  links:
+    linkedin: https://www.linkedin.com/in/krishbin-paudel/
+
+- name: Nadika Poudel
+  area: compiler # research area id (perf, compiler, hetero, data, security)
+  role: phd
+  photo: nadika.jpeg
+  focus: Machine learning for TPU/GPU compiler optimization
+  links:
+    website: https://nadika.site
+
+- name: Hemangi Patil
+  area: data # research area id (perf, compiler, hetero, data, security)
+  role: ms
+  photo: himangi.jpeg
+  focus: System and algorithm optimization for retrieval models
+  links:
+    linkedin: https://www.linkedin.com/in/patilhemangi/
+
+- name: Chowdhury Nafiun Nuru
+  area: compiler # research area id (perf, compiler, hetero, data, security)
+  role: ug
+  photo: nafi.jpeg
+  focus: Compiler optimization
+  note: Previously SWE intern at AWS
+  links:
+    linkedin: https://www.linkedin.com/in/nafi3141
+
+- name: Zyad Abd-Elrahman
+  area: security # research area id (perf, compiler, hetero, data, security)
+  role: ug
+  photo: zyad.jpeg
+  focus: Hardware security
+  links:
+    linkedin: https://www.linkedin.com/in/zyad-abd-elrahman/
+# Example alumni entry:
+# - name: Jane Doe
+#   role: alumni
+#   degree: PhD 2028
+#   now: Research Scientist, Google
+#   links:
+#     website: https://janedoe.github.io

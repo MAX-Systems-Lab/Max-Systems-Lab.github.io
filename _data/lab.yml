@@ -1,0 +1,30 @@
+# -----------------------------------------------------------------------------
+# Lab-wide settings used on the home page, footer and Join page.
+# Edit the text here; no HTML needed.
+# -----------------------------------------------------------------------------
+
+name: MAX Systems Lab
+pi: Santosh Pandey
+pi_url: https://concept-inversion.github.io
+affiliation: "" # e.g. "Department of Computer Science and Engineering, University of ..."
+
+tagline: Machine learning for faster, explainable, and more efficient computer systems.
+intro: >
+  We build learned models that predict, explain, and optimize the performance of computer systems:
+  from CPU and GPU microarchitecture, to compilers and programs, to large heterogeneous and AI systems.
+  Our goal is to replace slow, opaque simulation and hand-tuned heuristics with models that are fast,
+  accurate, and tell architects *why* a design behaves the way it does.
+
+# Shown as a highlighted banner on the home page. Leave blank to hide.
+recruiting: We are recruiting fully funded PhD students and motivated undergraduate researchers.
+
+# Join page
+contact_email: "" # e.g. "you@university.edu" (leave blank to hide the email button)
+apply_form: "" # e.g. a Google Form link for prospective students (leave blank to hide)
+email_subject: "[Prospective Student] <Your Name> - <Research Area>"
+
+# Optional numbers for the "By the numbers" strip on the home page.
+# Publications, citations, and members are computed automatically.
+extra_stats:
+  # - value: "$1M+"
+  #   label: Research funding

@@ -1,0 +1,23 @@
+{% comment %}
+  Renders news items. Params: limit (number, optional)
+  News files live in _news/. Optional front matter `type:` paper | award | talk | people | grant | preprint
+{% endcomment %}
+{% assign news_items = site.news | sort: 'date' | reverse %}
+{% assign news_limit = include.limit | default: 1000 %}
+<ul class="lab-news">
+  {% for item in news_items limit: news_limit %}
+    <li class="lab-news-item">
+      <time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: '%b %Y' }}</time>
+      <div class="lab-news-body">
+        {% if item.type -%}
+          <span class="lab-tag lab-tag-{{ item.type }}">{{ item.type }}</span>
+        {%- endif %}
+        {% if item.inline == false %}
+          <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        {% else %}
+          {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+        {% endif %}
+      </div>
+    </li>
+  {% endfor %}
+</ul>

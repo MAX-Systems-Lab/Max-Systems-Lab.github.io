@@ -2,17 +2,17 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Max Systems Lab # the website title (if blank, full name will be used instead)
-first_name: Max
+title: MAX Systems Lab # the website title (if blank, full name will be used instead)
+first_name: MAX
 middle_name:
 last_name: Systems Lab
 contact_note: >
   Reach out for collaborations, student opportunities, and research partnerships.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Max Systems Lab builds robust AI systems, multimodal models, and human-centered machine intelligence.
+  MAX Systems Lab uses machine learning to model, explain, and optimize computer systems, from microarchitecture to large-scale heterogeneous and AI systems.
 footer_text: >
-  © Max Systems Lab.
-keywords: ai lab, machine learning, systems research, multimodal ai, trustworthy ai # add your own keywords or leave empty
+  Machine learning for computer systems.
+keywords: computer architecture, machine learning for systems, performance modeling, HPC, compilers, hardware security # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🧪 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -103,6 +103,9 @@ collections:
     defaults:
       layout: post
     output: true
+  research:
+    output: true
+    permalink: /research/:name/
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -140,6 +143,9 @@ exclude:
   - package-lock.json
   - purgecss.config.js
   - README.md
+  - HOW_TO_UPDATE.md
+  - AGENTS.md
+  - CLAUDE.md
   - readme_preview/
   - vendor
 keep_files:
@@ -174,6 +180,11 @@ defaults:
       path: "assets"
     values:
       sitemap: false
+  - scope:
+      path: ""
+      type: research
+    values:
+      layout: research-area
 
 sass:
   style: compressed
@@ -259,6 +270,7 @@ filtered_bibtex_keywords:
     preview,
     selected,
     slides,
+    thrust,
     supp,
     video,
     website,

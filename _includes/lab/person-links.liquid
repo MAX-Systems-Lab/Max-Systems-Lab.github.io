@@ -1,0 +1,23 @@
+{% assign l = include.links %}
+{% if l %}
+  <div class="lab-person-links">
+    {% if l.website -%}
+      <a href="{{ l.website }}" title="Website" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a>
+    {%- endif %}
+    {% if l.scholar -%}
+      <a href="{{ l.scholar }}" title="Google Scholar" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i></a>
+    {%- endif %}
+    {% if l.github -%}
+      <a href="{{ l.github }}" title="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+    {%- endif %}
+    {% if l.linkedin -%}
+      <a href="{{ l.linkedin }}" title="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+    {%- endif %}
+    {% if l.twitter -%}
+      <a href="{{ l.twitter }}" title="X / Twitter" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+    {%- endif %}
+    {% if l.email -%}
+      <a href="mailto:{{ l.email }}" title="Email"><i class="fa-solid fa-envelope"></i></a>
+    {%- endif %}
+  </div>
+{% endif %}

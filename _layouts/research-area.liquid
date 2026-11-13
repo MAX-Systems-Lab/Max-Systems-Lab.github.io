@@ -1,0 +1,63 @@
+---
+layout: default
+---
+<div class="lab post">
+  <nav class="lab-crumbs"><a href="{{ '/research/' | relative_url }}">Research</a> / {{ page.title }}</nav>
+  <header class="lab-page-head">
+    <span class="lab-area-icon lab-area-icon-lg"><i class="{{ page.icon }}"></i></span>
+    <h1>{{ page.title }}</h1>
+    <p class="lab-page-desc">{{ page.summary }}</p>
+  </header>
+
+  <article class="lab-prose">{{ content }}</article>
+
+  {% if page.questions %}
+    <section class="lab-section">
+      <h2>Open questions</h2>
+      <ul class="lab-questions">
+        {% for q in page.questions %}
+          <li>{{ q }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+
+  {% if page.projects %}
+    <section class="lab-section">
+      <h2>Current projects</h2>
+      <div class="lab-project-grid">
+        {% for pr in page.projects %}
+          <div class="lab-project">
+            <h3>
+              {% if pr.url -%}
+                <a href="{{ pr.url }}">{{ pr.title }}</a>
+              {%- else -%}
+                {{- pr.title -}}
+              {%- endif %}
+            </h3>
+            <p>{{ pr.text }}</p>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+
+  {% assign members = site.data.people | where: 'area', page.thrust %}
+  {% if members.size > 0 %}
+    <section class="lab-section">
+      <h2>People</h2>
+      <div class="lab-people-grid">
+        {% for p in members -%}
+          {%- include lab/person-card.liquid person=p -%}
+        {%- endfor %}
+      </div>
+    </section>
+  {% endif %}
+
+  <section class="lab-section">
+    <h2>Publications</h2>
+    <div class="publications lab-area-pubs">
+      {% bibliography --group_by none --query @*[thrust={{ page.thrust }}] %}
+    </div>
+  </section>
+</div>

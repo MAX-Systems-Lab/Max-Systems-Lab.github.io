@@ -1,0 +1,89 @@
+---
+layout: default
+---
+{% assign lab = site.data.lab %}
+{% assign pi = site.data.people | where: 'role', 'pi' | first %}
+<div class="lab">
+  <section class="lab-hero">
+    <div class="lab-hero-text">
+      <p class="lab-eyebrow">
+        {{ lab.name -}}
+        {%- if lab.affiliation != '' %} · {{ lab.affiliation }}{% endif %}
+      </p>
+      <h1>{{ lab.tagline }}</h1>
+      <div class="lab-lead">{{ lab.intro | markdownify }}</div>
+      <div class="lab-cta">
+        <a class="lab-btn lab-btn-primary" href="{{ '/research/' | relative_url }}">Our research</a>
+        <a class="lab-btn" href="{{ '/publications/' | relative_url }}">Publications</a>
+        <a class="lab-btn" href="{{ '/join/' | relative_url }}">Join us</a>
+      </div>
+    </div>
+    {% if pi %}
+      <aside class="lab-hero-pi">
+        {% include lab/avatar.liquid person=pi %}
+        <div>
+          <p class="lab-hero-pi-name">
+            <a href="{{ pi.links.website | default: '/people/' }}">{{ pi.name }}</a>
+          </p>
+          <p class="lab-hero-pi-title">{{ pi.title }}</p>
+          {% include lab/person-links.liquid links=pi.links %}
+        </div>
+      </aside>
+    {% endif %}
+  </section>
+
+  {% if lab.recruiting and lab.recruiting != '' %}
+    <a class="lab-banner" href="{{ '/join/' | relative_url }}">
+      <i class="fa-solid fa-bullhorn"></i>
+      <span>{{ lab.recruiting }}</span>
+      <span class="lab-more">How to apply <i class="fa-solid fa-arrow-right"></i></span>
+    </a>
+  {% endif %}
+
+  {% include lab/stats.liquid %}
+
+  <section class="lab-section">
+    <div class="lab-section-head">
+      <h2>Research areas</h2>
+      <a class="lab-more" href="{{ '/research/' | relative_url }}">All research <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="lab-area-grid">
+      {% assign areas = site.research | sort: 'order' %}
+      {% for area in areas %}
+        {% include lab/area-card.liquid area=area %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <div class="lab-two-col">
+    <section class="lab-section">
+      <div class="lab-section-head">
+        <h2>News</h2>
+        <a class="lab-more" href="{{ '/news/' | relative_url }}">All news <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      {% include lab/news-list.liquid limit=page.news_limit %}
+    </section>
+
+    <section class="lab-section">
+      <div class="lab-section-head">
+        <h2>Selected publications</h2>
+        <a class="lab-more" href="{{ '/publications/' | relative_url }}">All papers <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="publications lab-compact-pubs">
+        {% bibliography --group_by none --query @*[selected=true]* --max 5 %}
+      </div>
+    </section>
+  </div>
+
+  {% if site.data.funding.size > 0 %}
+    <section class="lab-section">
+      <div class="lab-section-head">
+        <h2>Supported by</h2>
+        <a class="lab-more" href="{{ '/funding/' | relative_url }}">Funding <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      {% include lab/sponsors.liquid current=true %}
+    </section>
+  {% endif %}
+
+  {{ content }}
+</div>

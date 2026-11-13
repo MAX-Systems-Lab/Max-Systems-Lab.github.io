@@ -17,7 +17,6 @@
    (or `@use "variables" as *;`) inside each file and qualify variables if needed. */
 @use "themes";
 @use "layout";
-@use "lab-home";
 
 // Core styles organized by usage
 @use "typography";
@@ -38,3 +37,6 @@
 @use "font-awesome/brands";
 @use "font-awesome/solid";
 @use "font-awesome/regular";
+
+// Lab design layer (loaded last so it overrides theme defaults)
+@use "lab";

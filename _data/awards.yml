@@ -1,0 +1,19 @@
+# -----------------------------------------------------------------------------
+# Awards and honors. Newest first.
+#   who:  must match a `name` in people.yml to also show on that person's card
+#         (use a list for shared awards)
+#   year: shown on the People page
+#   url:  optional link
+# -----------------------------------------------------------------------------
+
+- year: 2025
+  who: Santosh Pandey
+  title: Rutgers ECE Graduate Leadership and Service Award
+
+- year: 2023
+  who: [Krishbin Paudel, Nadika Poudel]
+  title: Microsoft Imagine Cup World Finalist
+
+- year: 2022
+  who: Nadika Poudel
+  title: Generation Google Scholarship

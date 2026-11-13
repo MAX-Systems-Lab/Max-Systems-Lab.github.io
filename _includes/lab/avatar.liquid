@@ -1,0 +1,10 @@
+{% assign p = include.person %}
+{% if p.photo %}
+  <img class="lab-avatar" src="{{ p.photo | prepend: '/assets/img/people/' | relative_url }}" alt="{{ p.name }}" loading="lazy">
+{% else %}
+  {% assign parts = p.name | split: ' ' %}
+  <span class="lab-avatar lab-avatar-initials" aria-hidden="true">
+    {{- parts.first | slice: 0 -}}
+    {{- parts.last | slice: 0 -}}
+  </span>
+{% endif %}

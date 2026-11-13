@@ -1,0 +1,12 @@
+# -----------------------------------------------------------------------------
+# Sponsors and grants (Funding page + home page logo strip).
+#   logo:    path to an image (put files in assets/img/sponsors/); optional
+#   current: true for active support, false moves it to "Past sponsors"
+#   grant:   optional line such as an award title or number
+# -----------------------------------------------------------------------------
+
+- name: NAIRR Pilot
+  url: https://nairrpilot.org
+  logo: /assets/img/sponsors/nairr.svg
+  grant: National AI Research Resource compute allocation
+  current: true

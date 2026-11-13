@@ -1,0 +1,14 @@
+{% comment %} Params: current (true/false) {% endcomment %}
+<div class="lab-sponsors">
+  {% for s in site.data.funding %}
+    {% if include.current == null or s.current == include.current %}
+      <a class="lab-sponsor" href="{{ s.url }}" target="_blank" rel="noopener" title="{{ s.name }}">
+        {% if s.logo %}<img src="{{ s.logo | relative_url }}" alt="{{ s.name }} logo" loading="lazy">{% endif %}
+        <span class="lab-sponsor-name">{{ s.name }}</span>
+        {% if s.grant and include.details -%}
+          <span class="lab-sponsor-grant">{{ s.grant }}</span>
+        {%- endif %}
+      </a>
+    {% endif %}
+  {% endfor %}
+</div>

@@ -1,0 +1,27 @@
+{% comment %} "By the numbers" strip. Counts come from papers.bib / citations.yml / people.yml automatically. {% endcomment %}
+{% assign total_cites = 0 %}
+{% for p in site.data.citations.papers %}
+  {% assign total_cites = total_cites | plus: p[1].citations %}
+{% endfor %}
+{% assign n_pubs = site.data.citations.papers | size %}
+{% assign members = site.data.people | where_exp: 'p', "p.role != 'alumni'" | size %}
+{% assign n_areas = site.research | size %}
+<div class="lab-stats">
+  <div>
+    <strong>{{ n_pubs }}</strong><span>Publications</span>
+  </div>
+  <div>
+    <strong>{{ total_cites }}+</strong><span>Citations</span>
+  </div>
+  <div>
+    <strong>{{ n_areas }}</strong><span>Research areas</span>
+  </div>
+  <div>
+    <strong>{{ members }}</strong><span>Lab members</span>
+  </div>
+  {% for s in site.data.lab.extra_stats %}
+    <div>
+      <strong>{{ s.value }}</strong><span>{{ s.label }}</span>
+    </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,7 @@
+{% assign area = include.area %}
+<a class="lab-area-card" href="{{ area.url | relative_url }}">
+  <span class="lab-area-icon"><i class="{{ area.icon }}"></i></span>
+  <h3>{{ area.title }}</h3>
+  <p>{{ area.summary }}</p>
+  <span class="lab-more">Learn more <i class="fa-solid fa-arrow-right"></i></span>
+</a>
