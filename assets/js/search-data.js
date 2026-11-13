@@ -11,46 +11,82 @@ ninja.data = [{
     },
   },{id: "nav-research",
           title: "Research",
-          description: "Research directions and active themes at Max Systems Lab.",
+          description: "We use machine learning to model, explain, and optimize computer systems across the stack.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/research/";
           },
         },{id: "nav-publications",
           title: "Publications",
-          description: "Papers, preprints, and technical reports from the lab.",
+          description: "Papers from the lab, newest first. Filter by research area or search by title, author, or venue.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-repositories",
-          title: "Repositories",
-          description: "Open-source code, tools, and research artifacts from the lab.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/repositories/";
-          },
         },{id: "nav-people",
           title: "People",
-          description: "Members of Max Systems Lab.",
+          description: "The researchers of MAX Systems Lab.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/people/";
           },
-        },{id: "nav-join",
-          title: "Join",
-          description: "Openings and collaboration opportunities at Max Systems Lab.",
+        },{id: "nav-news",
+          title: "News",
+          description: "Papers, awards, talks, and lab updates.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/news/";
+          },
+        },{id: "nav-funding",
+          title: "Funding",
+          description: "We are grateful to the agencies and companies that support our research.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/funding/";
+          },
+        },{id: "nav-join-us",
+          title: "Join Us",
+          description: "Openings for PhD students, master&#39;s students, and undergraduate researchers.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/join/";
           },
-        },{id: "news-one-paper-concorde-fast-and-accurate-cpu-performance-modeling-with-compositional-analytical-ml-fusion-led-by-arash-accepted-at-isca-25-a-great-collaborative-work-during-my-time-at-google",
-          title: 'One paper Concorde: Fast and Accurate CPU Performance Modeling with Compositional Analytical-ML Fusion,...',
+        },{id: "news-concorde-isca",
+          title: 'Concorde Isca',
           description: "",
-          section: "News",},{id: "news-pricipal-investigator-santosh-pandey-awarded-rutgers-ece-graduate-leadership-and-service-award",
-          title: 'Pricipal Investigator Santosh Pandey awarded Rutgers ECE Graduate Leadership and Service Award.',
+          section: "News",handler: () => {
+              window.location.href = "/news/2025-03-21-concorde-isca.html";
+            },},{id: "news-leadership-award",
+          title: 'Leadership Award',
           description: "",
-          section: "News",},{
+          section: "News",handler: () => {
+              window.location.href = "/news/2025-05-15-leadership-award.html";
+            },},{id: "research-ai-driven-program-amp-compiler-optimization",
+          title: 'AI-Driven Program &amp;amp; Compiler Optimization',
+          description: "",
+          section: "Research",handler: () => {
+              window.location.href = "/research/compiler-optimization/";
+            },},{id: "research-heterogeneous-amp-agentic-ai-systems",
+          title: 'Heterogeneous &amp;amp; Agentic AI Systems',
+          description: "",
+          section: "Research",handler: () => {
+              window.location.href = "/research/heterogeneous-systems/";
+            },},{id: "research-explainable-amp-generalizable-performance-modeling",
+          title: 'Explainable &amp;amp; Generalizable Performance Modeling',
+          description: "",
+          section: "Research",handler: () => {
+              window.location.href = "/research/performance-modeling/";
+            },},{id: "research-systems-for-large-scale-retrieval-amp-graph-analytics",
+          title: 'Systems for Large-Scale Retrieval &amp;amp; Graph Analytics',
+          description: "",
+          section: "Research",handler: () => {
+              window.location.href = "/research/retrieval-graph-systems/";
+            },},{id: "research-secure-hardware-software-co-design",
+          title: 'Secure Hardware/Software Co-Design',
+          description: "",
+          section: "Research",handler: () => {
+              window.location.href = "/research/secure-hardware/";
+            },},{
       id: 'light-theme',
       title: 'Change theme to light',
       description: 'Change the theme of the site to Light',
