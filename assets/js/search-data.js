@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-publications",
           title: "Publications",
-          description: "Papers from the lab, newest first. Filter by research area or search by title, author, or venue.",
+          description: "Papers from the lab. Filter by type or research area, search, or change the order.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
@@ -61,6 +61,36 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2025-05-15-leadership-award.html";
+            },},{id: "news-insyde-eurosys",
+          title: 'Insyde Eurosys',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2026-03-15-insyde-eurosys.html";
+            },},{id: "news-mlarchsys-isca",
+          title: 'Mlarchsys Isca',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2026-06-05-mlarchsys-isca.html";
+            },},{id: "news-yarch-isca",
+          title: 'Yarch Isca',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2026-06-10-yarch-isca.html";
+            },},{id: "news-zyad-uarch-isca",
+          title: 'Zyad Uarch Isca',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2026-06-15-zyad-uarch-isca.html";
+            },},{id: "news-nadika-sc26",
+          title: 'Nadika Sc26',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2026-11-10-nadika-sc26.html";
+            },},{id: "news-nadika-wiml-neurips",
+          title: 'Nadika Wiml Neurips',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2026-12-01-nadika-wiml-neurips.html";
             },},{id: "research-ai-driven-program-amp-compiler-optimization",
           title: 'AI-Driven Program &amp;amp; Compiler Optimization',
           description: "",
