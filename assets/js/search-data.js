@@ -106,11 +106,6 @@ ninja.data = [{
           description: "",
           section: "Research",handler: () => {
               window.location.href = "/research/compiler-optimization/";
-            },},{id: "research-heterogeneous-amp-agentic-ai-systems",
-          title: 'Heterogeneous &amp;amp; Agentic AI Systems',
-          description: "",
-          section: "Research",handler: () => {
-              window.location.href = "/research/heterogeneous-systems/";
             },},{id: "research-explainable-amp-generalizable-performance-modeling",
           title: 'Explainable &amp;amp; Generalizable Performance Modeling',
           description: "",
@@ -121,11 +116,11 @@ ninja.data = [{
           description: "",
           section: "Research",handler: () => {
               window.location.href = "/research/retrieval-graph-systems/";
-            },},{id: "research-secure-hardware-software-co-design",
-          title: 'Secure Hardware/Software Co-Design',
+            },},{id: "research-representative-benchmarks-amp-workload-characterization",
+          title: 'Representative Benchmarks &amp;amp; Workload Characterization',
           description: "",
           section: "Research",handler: () => {
-              window.location.href = "/research/secure-hardware/";
+              window.location.href = "/research/workload-characterization/";
             },},{
       id: 'light-theme',
       title: 'Change theme to light',
