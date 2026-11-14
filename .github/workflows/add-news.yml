@@ -32,9 +32,20 @@ on:
           - data
           - security
       type:
-        description: "News tag (optional): paper, preprint, award, talk, people, grant"
+        description: "News tags, comma-separated (optional): paper, preprint, award, talk, people, grant"
         required: false
         type: string
+      category:
+        description: "Paper type (optional, auto-detected)"
+        required: false
+        type: choice
+        default: ""
+        options:
+          - ""
+          - conference
+          - journal
+          - workshop
+          - preprint
       date:
         description: "Date YYYY-MM-DD (optional, default today)"
         required: false
@@ -66,12 +77,14 @@ jobs:
           AREA: ${{ inputs.area }}
           TYPE: ${{ inputs.type }}
           DATE: ${{ inputs.date }}
+          CATEGORY: ${{ inputs.category }}
           SELECTED: ${{ inputs.selected }}
         run: |
           args=()
           [ -n "$AREA" ] && args+=(--area "$AREA")
           [ -n "$TYPE" ] && args+=(--type "$TYPE")
           [ -n "$DATE" ] && args+=(--date "$DATE")
+          [ -n "$CATEGORY" ] && args+=(--category "$CATEGORY")
           [ "$SELECTED" = "true" ] && args+=(--selected)
           if [ "$MODE" = "bibtex" ]; then
             printf '%s' "$VALUE" | python3 bin/add_news.py bibtex - "${args[@]}"

@@ -18,7 +18,8 @@ Add news (and papers) to the MAX Systems Lab website in one command.
 
 Common options:
   --date YYYY-MM-DD   date of the news item (default: today)
-  --type TYPE         paper | preprint | award | talk | people | grant (shown as a small tag)
+  --type TAGS         one or more tags, comma-separated: paper,preprint,award,talk,people,grant
+  --category CAT      paper type: conference | journal | workshop | preprint (auto-detected if omitted)
   --area ID           research area for new papers: perf, compiler, hetero, data, security
   --selected          also feature the paper on the home page
   --message TEXT      custom news text (papers only; otherwise it is generated)
@@ -113,7 +114,7 @@ def norm_title(t):
 
 def format_entry(entry):
     f = entry["fields"]
-    order = ["thrust", "selected", "title", "author", "booktitle", "journal", "year", "abbr", "arxiv", "doi",
+    order = ["thrust", "category", "selected", "title", "author", "booktitle", "journal", "year", "abbr", "arxiv", "doi",
              "html", "pdf", "code", "abstract", "google_scholar_id", "bibtex_show"]
     keys = [k for k in order if k in f] + [k for k in f if k not in order]
     width = max(len(k) for k in keys)
@@ -139,6 +140,9 @@ VENUES = ["ISCA", "MICRO", "HPCA", "ASPLOS", "SIGMETRICS", "SC", "PPoPP", "PLDI"
 
 def guess_abbr(fields):
     venue = fields.get("booktitle") or fields.get("journal") or ""
+    paren = re.search(r"\(([A-Za-z&]+)\)", venue)
+    if "workshop" in venue.lower() and paren:
+        return paren.group(1)
     for v in VENUES:
         if re.search(r"(?<![A-Za-z])" + re.escape(v) + r"(?![A-Za-z])", venue):
             return v
@@ -204,6 +208,8 @@ def add_to_bib(entry, args):
         f["thrust"] = args.area
     if args.selected:
         f["selected"] = "true"
+    if args.category:
+        f["category"] = args.category
     f.setdefault("bibtex_show", "true")
     if not f.get("abbr"):
         abbr = guess_abbr(f)
@@ -223,7 +229,8 @@ def write_news(message, args, slug_hint):
     date = args.date or dt.date.today().isoformat()
     slug = re.sub(r"[^a-z0-9]+", "-", slug_hint.lower()).strip("-")[:50] or "news"
     path = NEWS / f"{date}-{slug}.md"
-    front = f"---\ndate: {date}\n" + (f"type: {args.type}\n" if args.type else "") + "---\n\n"
+    tags = [t.strip().lower() for t in (args.type or "").split(",") if t.strip()]
+    front = f"---\ndate: {date}\n" + (f"type: [{', '.join(tags)}]\n" if tags else "") + "---\n\n"
     content = front + textwrap.fill(message, 110) + "\n"
     if args.dry_run:
         print(f"--- {path.relative_to(ROOT)}\n{content}")
@@ -243,7 +250,9 @@ def paper_news(entry, args, preprint=False):
     venue = f.get("abbr") or strip_braces(f.get("booktitle") or f.get("journal") or "")
     year = f.get("year", "")
     where = f" at **{venue} {year}**".rstrip() if venue else ""
-    return f"Our paper {link} has been accepted{where}." if where else f"New paper: {link}."
+    booktitle = f.get("booktitle", "")
+    kind = "workshop paper" if f.get("category") == "workshop" or "workshop" in booktitle.lower() else "paper"
+    return f"Our {kind} {link} has been accepted{where}." if where else f"New {kind}: {link}."
 
 
 def main():
@@ -253,6 +262,7 @@ def main():
     p.add_argument("--date")
     p.add_argument("--type")
     p.add_argument("--area", choices=sorted(AREAS))
+    p.add_argument("--category", choices=["conference", "journal", "workshop", "preprint"])
     p.add_argument("--selected", action="store_true")
     p.add_argument("--message")
     p.add_argument("--no-news", action="store_true", help="only add the paper, do not post news")

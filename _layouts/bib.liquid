@@ -3,10 +3,26 @@
 {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
 {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
 
+{% comment %} Publication type: `category` field in papers.bib, otherwise derived from the entry. {% endcomment %}
+{% if entry.category %}
+  {% assign pub_category = entry.category | downcase %}
+{% elsif entry.type == 'article' and entry.journal contains 'arXiv' %}
+  {% assign pub_category = 'preprint' %}
+{% elsif entry.type == 'article' %}
+  {% assign pub_category = 'journal' %}
+{% elsif entry.booktitle contains 'Workshop' or entry.booktitle contains 'workshop' %}
+  {% assign pub_category = 'workshop' %}
+{% elsif thesis contains entry.type %}
+  {% assign pub_category = 'thesis' %}
+{% else %}
+  {% assign pub_category = 'conference' %}
+{% endif %}
+
 <div class="row">
   {% if site.enable_publication_thumbnails %}
     <div class="col-sm-4 col-md-3 publication-left-column">
       <div class="abbr">
+        <span class="lab-pub-type lab-pub-type-{{ pub_category }}">{{ pub_category }}</span>
         {%- if entry.abbr -%}
           {%- if site.data.venues[entry.abbr] -%}
             {% assign venue_style = null %}
@@ -78,6 +94,8 @@
   <div
     id="{{ entry.key }}"
     data-thrust="{{ entry.thrust }}"
+    data-type="{{ pub_category }}{% if entry.award %} award{% endif %}"
+    data-year="{{ entry.year }}"
     class="{% if site.enable_publication_thumbnails %}col-sm-8 col-md-9{% else %}col-sm-12{% endif %}"
   >
     <!-- Title -->

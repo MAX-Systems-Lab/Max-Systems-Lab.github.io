@@ -1,17 +1,20 @@
 {% comment %}
   Renders news items. Params: limit (number, optional)
-  News files live in _news/. Optional front matter `type:` paper | award | talk | people | grant | preprint
+  News files live in _news/. Optional front matter `type:` one tag or a list, e.g. `type: [paper, award]`.
+  Tags: paper | preprint | award | talk | people | grant (any word works).
 {% endcomment %}
 {% assign news_items = site.news | sort: 'date' | reverse %}
 {% assign news_limit = include.limit | default: 1000 %}
-<ul class="lab-news">
+<ul class="lab-news" data-sortable-list>
   {% for item in news_items limit: news_limit %}
-    <li class="lab-news-item">
+    {% assign tags = item.type | join: ',' | downcase | split: ',' %}
+    <li class="lab-news-item" data-type="{{ tags | join: ' ' | strip }}" data-date="{{ item.date | date: '%Y-%m-%d' }}">
       <time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: '%b %Y' }}</time>
       <div class="lab-news-body">
-        {% if item.type -%}
-          <span class="lab-tag lab-tag-{{ item.type }}">{{ item.type }}</span>
-        {%- endif %}
+        {% for t in tags %}
+          {% assign tt = t | strip %}
+          <span class="lab-tag lab-tag-{{ tt }}">{{ tt }}</span>
+        {%- endfor %}
         {% if item.inline == false %}
           <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
         {% else %}

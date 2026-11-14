@@ -34,7 +34,7 @@ python3 bin/add_news.py paper concorde2025
 python3 bin/add_news.py text "Krishbin passed the qualifying exam!" --type people
 ```
 
-Options: `--date 2026-05-01`, `--type award|talk|people|grant|paper|preprint`, `--area` (see below),
+Options: `--date 2026-05-01`, `--type paper,award` (one or more tags), `--category workshop`, `--area` (see below),
 `--selected` (feature on home page), `--message "Custom text with {paper}"`, `--no-news`, `--dry-run`.
 
 **No terminal?** Use GitHub: **Actions → "Add news / paper" → Run workflow**, choose the mode, and paste the arXiv id,
@@ -49,6 +49,7 @@ Paste a normal BibTeX entry and add a few optional fields:
 ```bibtex
 @inproceedings{pandey2026example,
   thrust      = {perf},        % research area: perf | compiler | hetero | data | security | earlier
+  category    = {workshop},    % conference | journal | workshop | preprint (optional, auto-detected)
   selected    = {true},        % show on the home page
   title       = {...},
   author      = {Pandey, Santosh and ...},
@@ -69,6 +70,10 @@ Paste a normal BibTeX entry and add a few optional fields:
 
 The `thrust` field puts the paper on that research area's page and in the area filter on Publications.
 
+`category` sets the Type filter. If you leave it out it is detected: `@article` → journal (arXiv → preprint),
+`@inproceedings` with "Workshop" in the booktitle → workshop, otherwise conference. Papers with an `award` field
+also appear under the **Award** filter.
+
 Area ids: `perf` (performance modeling), `compiler` (programs and compilers), `hetero` (heterogeneous and agentic AI
 systems), `data` (retrieval and graph systems), `security` (secure hardware), `earlier` (earlier work).
 
@@ -81,13 +86,14 @@ Citation counts update automatically three times a week from Google Scholar (`up
 ```markdown
 ---
 date: 2026-05-01
-type: award # optional tag: paper | preprint | award | talk | people | grant
+type: [paper, award] # one or more tags: paper | preprint | award | talk | people | grant
 ---
 
 Nadika received the XYZ Fellowship! Markdown [links](https://...) work.
 ```
 
-The home page shows the latest 6 items (change `news_limit` in `_pages/about.md`).
+Tags become filter buttons on the News page. The home page shows the latest 6 items (change `news_limit` in
+`_pages/about.md`).
 
 ---
 

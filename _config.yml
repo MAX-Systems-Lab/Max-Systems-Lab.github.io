@@ -13,6 +13,7 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
 footer_text: >
   Machine learning for computer systems.
 keywords: computer architecture, machine learning for systems, performance modeling, HPC, compilers, hardware security # add your own keywords or leave empty
+future: true # show news and papers dated in the future (e.g. an upcoming December workshop)
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🧪 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -235,6 +236,8 @@ scholar:
   query: "@*"
   group_by: year
   group_order: descending
+  sort_by: year,month
+  order: descending
 
 # Display different badges withs stats for your publications
 # Customize badge behavior in _layouts/bib.liquid
@@ -271,6 +274,7 @@ filtered_bibtex_keywords:
     selected,
     slides,
     thrust,
+    category,
     supp,
     video,
     website,

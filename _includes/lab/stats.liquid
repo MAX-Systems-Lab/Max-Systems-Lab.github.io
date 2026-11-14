@@ -1,23 +1,29 @@
-{% comment %} "By the numbers" strip. Counts come from papers.bib / citations.yml / people.yml automatically. {% endcomment %}
+{% comment %}
+  Publication stats (Publications page). Citations and h-index come from _data/citations.yml,
+  which the update-citations workflow refreshes from Google Scholar. The paper count is
+  filled in from papers.bib by lab-filter.js.
+{% endcomment %}
 {% assign total_cites = 0 %}
+{% assign cites = '' | split: '' %}
 {% for p in site.data.citations.papers %}
-  {% assign total_cites = total_cites | plus: p[1].citations %}
+  {% assign c = p[1].citations | plus: 0 %}
+  {% assign total_cites = total_cites | plus: c %}
+  {% assign cites = cites | push: c %}
 {% endfor %}
-{% assign n_pubs = site.data.citations.papers | size %}
-{% assign members = site.data.people | where_exp: 'p', "p.role != 'alumni'" | size %}
-{% assign n_areas = site.research | size %}
+{% assign cites = cites | sort | reverse %}
+{% assign h_index = 0 %}
+{% for c in cites %}
+  {% if c >= forloop.index %}{% assign h_index = forloop.index %}{% endif %}
+{% endfor %}
 <div class="lab-stats">
   <div>
-    <strong>{{ n_pubs }}</strong><span>Publications</span>
+    <strong data-stat="pubs">{{ site.data.citations.papers | size }}</strong><span>Publications</span>
   </div>
   <div>
-    <strong>{{ total_cites }}+</strong><span>Citations</span>
+    <strong>{{ total_cites }}</strong><span>Citations</span>
   </div>
   <div>
-    <strong>{{ n_areas }}</strong><span>Research areas</span>
-  </div>
-  <div>
-    <strong>{{ members }}</strong><span>Lab members</span>
+    <strong>{{ h_index }}</strong><span>h-index</span>
   </div>
   {% for s in site.data.lab.extra_stats %}
     <div>
@@ -25,3 +31,10 @@
     </div>
   {% endfor %}
 </div>
+{% if site.data.citations.metadata.last_updated %}
+  <p class="lab-muted lab-stats-note">
+    Citation data from
+    <a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}" target="_blank" rel="noopener">Google Scholar</a>,
+    updated {{ site.data.citations.metadata.last_updated | date: '%b %-d, %Y' }}.
+  </p>
+{% endif %}
