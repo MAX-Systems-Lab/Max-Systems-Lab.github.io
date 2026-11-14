@@ -275,6 +275,7 @@ filtered_bibtex_keywords:
     slides,
     thrust,
     category,
+    highlight,
     supp,
     video,
     website,

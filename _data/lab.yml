@@ -6,7 +6,7 @@
 name: MAX Systems Lab
 pi: Santosh Pandey
 pi_url: https://concept-inversion.github.io
-affiliation: "" # e.g. "Department of Computer Science and Engineering, University of ..."
+affiliation: "University of South Florida" # e.g. "Department of Computer Science and Engineering, University of ..."
 
 tagline: Machine learning for faster, explainable, and more efficient computer systems.
 intro: >

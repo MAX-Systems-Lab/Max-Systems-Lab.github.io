@@ -16,9 +16,11 @@
   title: Principal Investigator
   photo: professor.jpeg
   bio: >
-    Santosh leads MAX Systems Lab. His research uses machine learning to model and optimize computer
-    systems, spanning deep-learning-based microarchitecture simulation (SimNet, TAO), CPU performance
-    modeling (Concorde, with Google), and GPU-accelerated graph and ML systems.
+    Santosh leads MAX Systems Lab at the University of South Florida. His research uses machine learning
+    to model and optimize computer systems, spanning deep-learning-based microarchitecture simulation
+    (SimNet, TAO), CPU performance modeling (Concorde, with Google), and GPU-accelerated graph and ML
+    systems. His work on Concorde was selected as an **IEEE Micro Top Pick (2026)**, recognizing one of
+    the most significant computer architecture papers of the year.
   links:
     website: https://concept-inversion.github.io
     scholar: https://scholar.google.com/citations?user=4jtGttIAAAAJ
@@ -40,6 +42,24 @@
   links:
     website: https://nadika.site
 
+- name: Sandeep Bal
+  area: hetero # research area id (perf, compiler, hetero, data, security)
+  role: phd
+  since: 2026
+  photo: sandeep.jpg
+  focus: Deep learning accelerators, machine learning, and reliability
+
+- name: Shakil Mahmud Shuvo
+  role: phd
+  since: 2026
+  photo: shakil.jpg
+  focus: Machine learning, explainable AI, and multimodal reasoning
+  links:
+    website: https://shakilmahmudshuvo.github.io/
+    scholar: https://scholar.google.com/citations?user=EOsiW3sAAAAJ
+    github: https://github.com/ShakilMahmudShuvo
+    linkedin: https://www.linkedin.com/in/smshuv0
+
 - name: Hemangi Patil
   area: data # research area id (perf, compiler, hetero, data, security)
   role: ms
@@ -50,7 +70,8 @@
 
 - name: Chowdhury Nafiun Nuru
   area: compiler # research area id (perf, compiler, hetero, data, security)
-  role: ug
+  role: alumni
+  degree: Undergraduate researcher
   photo: nafi.jpeg
   focus: Compiler optimization
   note: Previously SWE intern at AWS
@@ -59,7 +80,8 @@
 
 - name: Zyad Abd-Elrahman
   area: security # research area id (perf, compiler, hetero, data, security)
-  role: ug
+  role: alumni
+  degree: Undergraduate researcher
   photo: zyad.jpeg
   focus: Hardware security
   links:

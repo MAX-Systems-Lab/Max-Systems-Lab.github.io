@@ -13,7 +13,10 @@
       <div class="lab-news-body">
         {% for t in tags %}
           {% assign tt = t | strip %}
-          <span class="lab-tag lab-tag-{{ tt }}">{{ tt }}</span>
+          <span class="lab-tag lab-tag-{{ tt }}">
+            {%- if tt == 'award' %}{% include lab/award-icon.liquid %} {% endif -%}
+            {{- tt -}}
+          </span>
         {%- endfor %}
         {% if item.inline == false %}
           <a href="{{ item.url | relative_url }}">{{ item.title }}</a>

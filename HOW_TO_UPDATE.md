@@ -50,7 +50,8 @@ Paste a normal BibTeX entry and add a few optional fields:
 @inproceedings{pandey2026example,
   thrust      = {perf},        % research area: perf | compiler | hetero | data | security | earlier
   category    = {workshop},    % conference | journal | workshop | preprint (optional, auto-detected)
-  selected    = {true},        % show on the home page
+  selected    = {true},        % show under Selected publications on the home page
+  highlight   = {true},        % gold "Highlight" card at the top of the home page
   title       = {...},
   author      = {Pandey, Santosh and ...},
   booktitle   = {Proceedings of ... (MICRO)},

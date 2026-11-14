@@ -18,7 +18,7 @@
   {% assign pub_category = 'conference' %}
 {% endif %}
 
-<div class="row">
+<div class="row{% if entry.highlight %} lab-highlight{% endif %}">
   {% if site.enable_publication_thumbnails %}
     <div class="col-sm-4 col-md-3 publication-left-column">
       <div class="abbr">
@@ -98,6 +98,12 @@
     data-year="{{ entry.year }}"
     class="{% if site.enable_publication_thumbnails %}col-sm-8 col-md-9{% else %}col-sm-12{% endif %}"
   >
+    {% if entry.highlight %}
+      <div class="lab-highlight-label">
+        {% include lab/award-icon.liquid %}
+        {{ entry.award_name | default: 'Highlight' }}
+      </div>
+    {% endif %}
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
     <!-- Author -->
@@ -242,7 +248,8 @@
     <div class="links">
       {% if entry.award %}
         <a class="award btn btn-sm z-depth-0" role="button">
-          {%- if entry.award_name %}{{ entry.award_name }}{% else %}Awarded{% endif -%}
+          {%- include lab/award-icon.liquid %}
+          {% if entry.award_name %}{{ entry.award_name }}{% else %}Awarded{% endif -%}
         </a>
       {% endif %}
       {% if entry.abstract %}

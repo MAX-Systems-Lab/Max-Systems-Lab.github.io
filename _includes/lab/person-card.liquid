@@ -16,7 +16,10 @@
   {% endif %}
   {% for a in site.data.awards %}
     {% if a.who == p.name or a.who contains p.name %}
-      <p class="lab-person-award"><i class="fa-solid fa-trophy"></i> {{ a.title }} ({{ a.year }})</p>
+      <p class="lab-person-award">
+        {% include lab/award-icon.liquid %}
+        {{ a.title }} ({{ a.year }})
+      </p>
     {% endif %}
   {% endfor %}
   {% include lab/person-links.liquid links=p.links %}

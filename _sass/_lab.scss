@@ -1004,3 +1004,61 @@ html[data-theme="dark"] .lab-sponsor img {
     padding-right: 0.7rem;
   }
 }
+
+/* ---------- Award symbol & highlighted papers ---------- */
+.lab-award-icon {
+  display: inline-block;
+  width: 1.05em;
+  height: 1.05em;
+  vertical-align: -0.17em;
+  color: var(--lab-gold);
+  --lab-award-inner: #fff;
+  flex: none;
+}
+html[data-theme="dark"] .lab-award-icon {
+  --lab-award-inner: #2b2105;
+}
+.lab-filter-btn .lab-award-icon {
+  width: 1em;
+  height: 1em;
+}
+.lab-award-year {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-width: 4.2rem;
+}
+.publications .links .award.btn .lab-award-icon {
+  margin-right: 0.2rem;
+}
+
+.publications ol.bibliography li .lab-highlight {
+  position: relative;
+  padding: 0.9rem 1rem !important;
+  border-radius: 10px;
+  background: var(--lab-gold-soft);
+  border: 1px solid color-mix(in srgb, var(--lab-gold) 35%, transparent);
+}
+.lab-highlight-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--lab-gold);
+  margin-bottom: 0.35rem;
+}
+.lab-home-highlight {
+  .publications {
+    margin-top: 0;
+  }
+  ol.bibliography li {
+    border-bottom: 0 !important;
+    padding: 0 !important;
+  }
+  .badges {
+    display: none;
+  }
+}

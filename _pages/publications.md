@@ -10,6 +10,7 @@ pub_types: # filter chips; a paper's type comes from `category` in papers.bib or
   - { value: journal, label: Journal }
   - { value: workshop, label: Workshop }
   - { value: preprint, label: Preprint }
+  - { value: thesis, label: Thesis }
   - { value: award, label: Award }
 ---
 
@@ -23,7 +24,7 @@ pub_types: # filter chips; a paper's type comes from `category` in papers.bib or
         <button class="lab-filter-btn" data-value="all">All</button>
         {% for t in page.pub_types %}
           <button class="lab-filter-btn" data-value="{{ t.value }}">
-            {% if t.value == 'award' %}<i class="fa-solid fa-trophy"></i>{% endif %}
+            {% if t.value == 'award' %}{% include lab/award-icon.liquid %}{% endif %}
             {{ t.label }}
           </button>
         {% endfor %}

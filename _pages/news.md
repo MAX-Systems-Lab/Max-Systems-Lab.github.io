@@ -20,7 +20,7 @@ news_tags: # filter chips shown when at least one news item has the tag
       <button class="lab-filter-btn" data-value="all">All</button>
       {% for t in page.news_tags %}
         <button class="lab-filter-btn" data-value="{{ t.value }}">
-          {% if t.value == 'award' %}<i class="fa-solid fa-trophy"></i>{% endif %}
+          {% if t.value == 'award' %}{% include lab/award-icon.liquid %}{% endif %}
           {{ t.label }}
         </button>
       {% endfor %}

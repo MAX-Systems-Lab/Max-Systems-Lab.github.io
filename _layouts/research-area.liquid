@@ -42,7 +42,7 @@ layout: default
     </section>
   {% endif %}
 
-  {% assign members = site.data.people | where: 'area', page.thrust %}
+  {% assign members = site.data.people | where: 'area', page.thrust | where_exp: 'p', "p.role != 'alumni'" %}
   {% if members.size > 0 %}
     <section class="lab-section">
       <h2>People</h2>

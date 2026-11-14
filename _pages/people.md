@@ -21,7 +21,7 @@ groups: # display order and headings for roles in _data/people.yml
       <div>
         <p class="lab-eyebrow">{{ pi.title }}</p>
         <h2>{% if pi.links.website %}<a href="{{ pi.links.website }}">{{ pi.name }}</a>{% else %}{{ pi.name }}{% endif %}</h2>
-        <p>{{ pi.bio }}</p>
+        {{ pi.bio | markdownify }}
         {% include lab/person-links.liquid links=pi.links %}
       </div>
     </section>
@@ -49,7 +49,7 @@ groups: # display order and headings for roles in _data/people.yml
 {% for p in alumni %}
 <li>
 {% if p.links.website %}<a href="{{ p.links.website }}">{{ p.name }}</a>{% else %}<strong>{{ p.name }}</strong>{% endif %}
-{% if p.degree %}<span class="lab-muted">({{ p.degree }})</span>{% endif %}
+{% if p.degree %}<span class="lab-muted">({{ p.degree }}{% if p.focus %}, {{ p.focus | downcase }}{% endif %})</span>{% endif %}
 {% if p.now %}<span class="lab-alumni-now">→ {{ p.now }}</span>{% endif %}
 </li>
 {% endfor %}
@@ -64,7 +64,7 @@ groups: # display order and headings for roles in _data/people.yml
 <ul class="lab-awards">
 {% for a in site.data.awards %}
 <li>
-<span class="lab-award-year">{{ a.year }}</span>
+<span class="lab-award-year">{% include lab/award-icon.liquid %} {{ a.year }}</span>
 <span>
 {% if a.url %}<a href="{{ a.url }}">{{ a.title }}</a>{% else %}{{ a.title }}{% endif %}
 <span class="lab-muted">· {% if a.who.first %}{{ a.who | join: ', ' }}{% else %}{{ a.who }}{% endif %}</span>
