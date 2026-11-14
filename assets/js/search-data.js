@@ -61,6 +61,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2025-05-15-leadership-award.html";
+            },},{id: "news-ieee-micro-top-picks",
+          title: 'Ieee Micro Top Picks',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2026-03-10-ieee-micro-top-picks.html";
             },},{id: "news-insyde-eurosys",
           title: 'Insyde Eurosys',
           description: "",
@@ -81,6 +86,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2026-06-15-zyad-uarch-isca.html";
+            },},{id: "news-new-phd-students",
+          title: 'New Phd Students',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2026-08-17-new-phd-students.html";
             },},{id: "news-nadika-sc26",
           title: 'Nadika Sc26',
           description: "",
