@@ -14,8 +14,6 @@ projects:
     text: Embeddings of programs and execution traces that capture how code interacts with the microarchitecture.
   - title: Program similarity via contrastive learning
     text: Similarity definitions grounded in performance behavior, learned from contrastive examples.
-  - title: Representative and privacy-preserving workloads
-    text: Generate synthetic programs and traces that reproduce real (including proprietary) workloads for evaluation.
   - title: Learned cost models for compilers
     text: Cost models for tensor programs on TPUs and GPUs, and analytical-then-learned cost models for heterogeneous loop scheduling in MLIR.
 ---

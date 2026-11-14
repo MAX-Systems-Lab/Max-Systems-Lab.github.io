@@ -48,7 +48,7 @@ Paste a normal BibTeX entry and add a few optional fields:
 
 ```bibtex
 @inproceedings{pandey2026example,
-  thrust      = {perf},        % research area: perf | compiler | hetero | data | security | earlier
+  thrust      = {perf},        % research area: perf | compiler | workload | data | earlier
   category    = {workshop},    % conference | journal | workshop | preprint (optional, auto-detected)
   selected    = {true},        % show under Selected publications on the home page
   highlight   = {true},        % gold "Highlight" card at the top of the home page
@@ -75,8 +75,8 @@ The `thrust` field puts the paper on that research area's page and in the area f
 `@inproceedings` with "Workshop" in the booktitle → workshop, otherwise conference. Papers with an `award` field
 also appear under the **Award** filter.
 
-Area ids: `perf` (performance modeling), `compiler` (programs and compilers), `hetero` (heterogeneous and agentic AI
-systems), `data` (retrieval and graph systems), `security` (secure hardware), `earlier` (earlier work).
+Area ids: `perf` (performance modeling), `compiler` (programs and compilers), `workload` (representative benchmarks and
+workload characterization), `data` (retrieval and graph systems), `earlier` (earlier work).
 
 Citation counts update automatically three times a week from Google Scholar (`update-citations.yml`).
 

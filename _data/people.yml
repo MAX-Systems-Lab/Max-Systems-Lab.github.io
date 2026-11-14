@@ -27,7 +27,7 @@
     github: https://github.com/concept-inversion
 
 - name: Krishbin Paudel
-  area: perf # research area id (perf, compiler, hetero, data, security)
+  area: perf # research area id (perf, compiler, workload, data)
   role: phd
   photo: krishbin.jpeg
   focus: Explainable microarchitecture performance modeling
@@ -35,7 +35,7 @@
     linkedin: https://www.linkedin.com/in/krishbin-paudel/
 
 - name: Nadika Poudel
-  area: compiler # research area id (perf, compiler, hetero, data, security)
+  area: compiler # research area id (perf, compiler, workload, data)
   role: phd
   photo: nadika.jpeg
   focus: Machine learning for TPU/GPU compiler optimization
@@ -43,17 +43,18 @@
     website: https://nadika.site
 
 - name: Sandeep Bal
-  area: hetero # research area id (perf, compiler, hetero, data, security)
+  area: perf # research area id (perf, compiler, workload, data)
   role: phd
   since: 2026
   photo: sandeep.jpg
-  focus: Deep learning accelerators, machine learning, and reliability
+  focus: ML-based performance surrogates and agentic AI for performance modeling
 
 - name: Shakil Mahmud Shuvo
+  area: workload # research area id (perf, compiler, workload, data)
   role: phd
   since: 2026
   photo: shakil.jpg
-  focus: Machine learning, explainable AI, and multimodal reasoning
+  focus: Representative benchmark generation and workload characterization
   links:
     website: https://shakilmahmudshuvo.github.io/
     scholar: https://scholar.google.com/citations?user=EOsiW3sAAAAJ
@@ -61,7 +62,7 @@
     linkedin: https://www.linkedin.com/in/smshuv0
 
 - name: Hemangi Patil
-  area: data # research area id (perf, compiler, hetero, data, security)
+  area: data # research area id (perf, compiler, workload, data)
   role: ms
   photo: himangi.jpeg
   focus: System and algorithm optimization for retrieval models
@@ -69,7 +70,7 @@
     linkedin: https://www.linkedin.com/in/patilhemangi/
 
 - name: Chowdhury Nafiun Nuru
-  area: compiler # research area id (perf, compiler, hetero, data, security)
+  area: compiler # research area id (perf, compiler, workload, data)
   role: alumni
   degree: Undergraduate researcher
   photo: nafi.jpeg
@@ -79,7 +80,6 @@
     linkedin: https://www.linkedin.com/in/nafi3141
 
 - name: Zyad Abd-Elrahman
-  area: security # research area id (perf, compiler, hetero, data, security)
   role: alumni
   degree: Undergraduate researcher
   photo: zyad.jpeg

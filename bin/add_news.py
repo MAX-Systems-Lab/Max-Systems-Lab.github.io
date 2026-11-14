@@ -20,7 +20,7 @@ Common options:
   --date YYYY-MM-DD   date of the news item (default: today)
   --type TAGS         one or more tags, comma-separated: paper,preprint,award,talk,people,grant
   --category CAT      paper type: conference | journal | workshop | preprint (auto-detected if omitted)
-  --area ID           research area for new papers: perf, compiler, hetero, data, security
+  --area ID           research area for new papers: perf, compiler, workload, data, earlier
   --selected          also feature the paper on the home page
   --message TEXT      custom news text (papers only; otherwise it is generated)
   --dry-run           print what would change without writing files
@@ -40,7 +40,7 @@ import xml.etree.ElementTree as ET
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 BIB = ROOT / "_bibliography" / "papers.bib"
 NEWS = ROOT / "_news"
-AREAS = {"perf", "compiler", "hetero", "data", "security", "earlier"}
+AREAS = {"perf", "compiler", "workload", "data", "earlier"}
 
 
 # --------------------------------------------------------------------------- #

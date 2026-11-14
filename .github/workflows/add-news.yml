@@ -28,9 +28,9 @@ on:
           - ""
           - perf
           - compiler
-          - hetero
+          - workload
           - data
-          - security
+          - earlier
       type:
         description: "News tags, comma-separated (optional): paper, preprint, award, talk, people, grant"
         required: false

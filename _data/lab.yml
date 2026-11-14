@@ -11,7 +11,7 @@ affiliation: "University of South Florida" # e.g. "Department of Computer Scienc
 tagline: Machine learning for faster, explainable, and more efficient computer systems.
 intro: >
   We build learned models that predict, explain, and optimize the performance of computer systems:
-  from CPU and GPU microarchitecture, to compilers and programs, to large heterogeneous and AI systems.
+  from CPU and GPU microarchitecture, to compilers, workloads, and large-scale retrieval systems.
   Our goal is to replace slow, opaque simulation and hand-tuned heuristics with models that are fast,
   accurate, and tell architects *why* a design behaves the way it does.
 
