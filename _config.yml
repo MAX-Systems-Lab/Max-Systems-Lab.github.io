@@ -15,7 +15,7 @@ footer_text: >
 keywords: computer architecture, machine learning for systems, performance modeling, HPC, compilers, hardware security # add your own keywords or leave empty
 future: true # show news and papers dated in the future (e.g. an upcoming December workshop)
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: 🧪 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: logo/favicon-64.png # the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://max-systems-lab.github.io # the base hostname & protocol for your site
 baseurl: "" # root site path (use /repo-name only for project sites)

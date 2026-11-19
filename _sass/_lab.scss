@@ -1053,3 +1053,40 @@ html[data-theme="dark"] .lab-award-icon {
   color: var(--lab-gold);
   margin-bottom: 0.35rem;
 }
+
+/* ---------- Logo ---------- */
+.navbar .lab-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.lab-brand-mark {
+  height: 26px;
+  width: auto;
+}
+.lab-hero-logo {
+  margin-bottom: 1.2rem;
+  img {
+    height: 128px;
+    width: auto;
+  }
+}
+.lab-logo-dark {
+  display: none;
+}
+html[data-theme="dark"] {
+  .lab-logo-light {
+    display: none;
+  }
+  .lab-logo-dark {
+    display: inline-block;
+  }
+}
+@media (max-width: 576px) {
+  .lab-hero-logo img {
+    height: 96px;
+  }
+  .lab-brand-mark {
+    height: 22px;
+  }
+}

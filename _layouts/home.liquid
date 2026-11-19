@@ -6,10 +6,13 @@ layout: default
 <div class="lab">
   <section class="lab-hero">
     <div class="lab-hero-text">
-      <p class="lab-eyebrow">
-        {{ lab.name -}}
-        {%- if lab.affiliation != '' %} · {{ lab.affiliation }}{% endif %}
-      </p>
+      <div class="lab-hero-logo">
+        <img class="lab-logo-light" src="{{ '/assets/img/logo/logo.png' | relative_url }}" alt="{{ lab.name }} logo">
+        <img class="lab-logo-dark" src="{{ '/assets/img/logo/logo-dark.png' | relative_url }}" alt="{{ lab.name }} logo">
+      </div>
+      {% if lab.affiliation != '' %}
+        <p class="lab-eyebrow">{{ lab.affiliation }}</p>
+      {% endif %}
       <h1>{{ lab.tagline }}</h1>
       <div class="lab-lead">{{ lab.intro | markdownify }}</div>
       <div class="lab-cta">
